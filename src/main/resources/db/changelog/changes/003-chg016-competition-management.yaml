@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: chg016-competition-alias-and-rules
+      author: calendar
+      changes:
+        - createTable:
+            tableName: competition_alias
+            columns:
+              - column: {name: competition_id, type: VARCHAR(40), constraints: {nullable: false}}
+              - column: {name: alias_type, type: VARCHAR(32), constraints: {nullable: false}}
+              - column: {name: alias_value, type: VARCHAR(128), constraints: {nullable: false}}
+        - addPrimaryKey: {tableName: competition_alias, columnNames: "competition_id,alias_type", constraintName: pk_competition_alias}
+        - addForeignKeyConstraint: {baseTableName: competition_alias, baseColumnNames: competition_id, referencedTableName: competition, referencedColumnNames: id, constraintName: fk_competition_alias_competition}
+        - createTable:
+            tableName: rule_scope_assignment
+            columns:
+              - column: {name: id, type: VARCHAR(36), constraints: {primaryKey: true, nullable: false}}
+              - column: {name: scope_type, type: VARCHAR(48), constraints: {nullable: false}}
+              - column: {name: federation_code, type: VARCHAR(16)}
+              - column: {name: competition_id, type: VARCHAR(64)}
+              - column: {name: season_code, type: VARCHAR(16)}
+              - column: {name: rule_type, type: VARCHAR(80), constraints: {nullable: false}}
+              - column: {name: mandatory, type: BOOLEAN, defaultValueBoolean: false, constraints: {nullable: false}}
+              - column: {name: allow_exception, type: BOOLEAN, defaultValueBoolean: true, constraints: {nullable: false}}
+              - column: {name: priority, type: INT, defaultValueNumeric: 0, constraints: {nullable: false}}
+              - column: {name: row_version, type: BIGINT, defaultValueNumeric: 0, constraints: {nullable: false}}
+        - createIndex: {tableName: rule_scope_assignment, indexName: ix_rule_scope_effective, columns: [{column: {name: federation_code}}, {column: {name: competition_id}}, {column: {name: season_code}}, {column: {name: priority}}]}
+      rollback:
+        - dropTable: {tableName: rule_scope_assignment}
+        - dropTable: {tableName: competition_alias}

@@ -1,0 +1,524 @@
+databaseChangeLog:
+  - logicalFilePath: db/changelog/db.changelog-master.yaml
+  # BASELINE NUEVA - ejecutar únicamente sobre bases vacías
+  # Motor elegido automáticamente por Liquibase desde la conexión JDBC.
+  - changeSet:
+      id: b26-schema-0001-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0001_competition.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0001-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0001_competition.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0002-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0002_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0002-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0002_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0003-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0003_team.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0003-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0003_team.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0004-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0004_external_competition.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0004-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0004_external_competition.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0005-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0005_competition_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0005-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0005_competition_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0006-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0006_competition_season_team.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0006-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0006_competition_season_team.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0007-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0007_timeslot.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0007-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0007_timeslot.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0008-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0008_assign_group.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0008-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0008_assign_group.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0009-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0009_league_round.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0009-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0009_league_round.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0010-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0010_round_date.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0010-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0010_round_date.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0011-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0011_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0011-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0011_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0012-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0012_ix_fixture_cs_round.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0012-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0012_ix_fixture_cs_round.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0013-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0013_external_commitment.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0013-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0013_external_commitment.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0014-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0014_ix_external_cs.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0014-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0014_ix_external_cs.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0015-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0015_blackout.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0015-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0015_blackout.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0016-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0016_rest_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0016-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0016_rest_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0017-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0017_team_pair_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0017-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0017_team_pair_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0018-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0018_constraint_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0018-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0018_constraint_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0019-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0019_generation_version.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0019-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0019_generation_version.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0020-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0020_uq_version_approved.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0020-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0020_uq_version_approved.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0021-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0021_generated_match.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0021-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0021_generated_match.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0022-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0022_ix_generated_match_version.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0022-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0022_ix_generated_match_version.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0023-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0023_generation_file.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0023-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0023_generation_file.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0024-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0024_planning_job.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0024-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0024_planning_job.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0025-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0025_uq_planning_job_active.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0025-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0025_uq_planning_job_active.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0026-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/schema/postgresql/0026_planning_job_log.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-schema-0026-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/schema/mssql/0026_planning_job_log.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8

@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: calendarcalculator
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/calendar}
+    username: ${DB_USERNAME:calendar}
+    password: ${DB_PASSWORD:calendar}
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+    # El master solo contiene esquema y catalogos. No importa temporadas historicas.
+    contexts: ${LIQUIBASE_CONTEXTS:catalogs}
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+server:
+  port: 8080
+
+calendar:
+  security:
+    oidc:
+      issuer-uri: ${CALENDAR_OIDC_ISSUER_URI:}
+      required-authority: ${CALENDAR_OIDC_REQUIRED_AUTHORITY:}
+      service-authority: ${CALENDAR_OIDC_SERVICE_AUTHORITY:}
+      service-client-id: ${CALENDAR_OIDC_SERVICE_CLIENT_ID:}
+  demo:
+    enabled: ${CALENDAR_DEMO_ENABLED:false}
+    season-year: ${CALENDAR_DEMO_SEASON_YEAR:2030}
+    team-count: ${CALENDAR_DEMO_TEAM_COUNT:4}
+  # Todas las APIs y batch usan la misma configuracion de negocio en BD.
+  planning:
+    timeout: ${CALENDAR_PLANNING_TIMEOUT:PT30M}
+    threads: ${CALENDAR_PLANNING_THREADS:2}
+  storage:
+    base-dir: ./data/dataFiles
+  results:
+    base-dir: ./data/results
+
+logging:
+  level:
+    org.springframework.web: INFO
+    net.atos.mev: DEBUG
+    net.atos.mev.calendarcalculator: DEBUG
+    # el motor en DEBUG/TRACE escribe millones de líneas en un backtracking largo
+    net.atos.mev.calendarcalculator.schedules: INFO

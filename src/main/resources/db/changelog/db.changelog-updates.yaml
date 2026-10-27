@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - include:
+      file: changes/003-chg016-competition-management.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: changes/004-chg013-p1-rule-catalog.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: changes/005-chg007-federation-persistence.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: changes/006-draw-candidates.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: changes/007-rule-scope-assignment.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: changes/008-p2-export-colours.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: changes/009-reference-catalogs.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: changes/010-legacy-database-aliases.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: changes/011-match-state-and-audit.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: changes/012-match-audit-actor-type.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: changes/013-planning-round-range.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: changes/014-match-state-season-cascade.yaml
+      relativeToChangelogFile: true

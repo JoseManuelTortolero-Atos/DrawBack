@@ -1,0 +1,49 @@
+databaseChangeLog:
+  - changeSet:
+      id: chg007-federation-persistence
+      author: calendar
+      changes:
+        - createTable:
+            tableName: federation
+            columns:
+              - column: {name: code, type: VARCHAR(16), constraints: {primaryKey: true, nullable: false}}
+              - column: {name: name, type: VARCHAR(160), constraints: {nullable: false}}
+              - column: {name: country_code, type: VARCHAR(2), constraints: {nullable: false}}
+              - column: {name: time_zone, type: VARCHAR(80), constraints: {nullable: false}}
+              - column: {name: status, type: VARCHAR(16), defaultValue: ACTIVE, constraints: {nullable: false}}
+              - column: {name: created_at, type: TIMESTAMP, defaultValueComputed: CURRENT_TIMESTAMP, constraints: {nullable: false}}
+              - column: {name: updated_at, type: TIMESTAMP, defaultValueComputed: CURRENT_TIMESTAMP, constraints: {nullable: false}}
+        - loadData:
+            tableName: federation
+            file: ../data/federation.csv
+            relativeToChangelogFile: true
+            encoding: UTF-8
+            separator: ','
+            quotchar: '"'
+            columns:
+              - column: {name: code, type: STRING}
+              - column: {name: name, type: STRING}
+              - column: {name: country_code, type: STRING}
+              - column: {name: time_zone, type: STRING}
+              - column: {name: status, type: STRING}
+        - addColumn:
+            tableName: competition
+            columns:
+              - column: {name: federation_code, type: VARCHAR(16), defaultValue: FRMF}
+        - update:
+            tableName: competition
+            columns:
+              - column: {name: federation_code, value: FRMF}
+            where: federation_code IS NULL
+        - addNotNullConstraint: {tableName: competition, columnName: federation_code, columnDataType: VARCHAR(16)}
+        - addForeignKeyConstraint:
+            baseTableName: competition
+            baseColumnNames: federation_code
+            referencedTableName: federation
+            referencedColumnNames: code
+            constraintName: fk_competition_federation
+      rollback:
+        - dropForeignKeyConstraint: {baseTableName: competition, constraintName: fk_competition_federation}
+        - dropColumn: {tableName: competition, columnName: federation_code}
+        - delete: {tableName: federation, where: "code IN ('FRMF','DEMO')"}
+        - dropTable: {tableName: federation}

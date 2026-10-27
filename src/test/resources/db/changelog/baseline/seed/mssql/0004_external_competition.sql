@@ -1,0 +1,20 @@
+-- Baseline Morocco New 2026-27: base siempre nueva
+INSERT INTO external_competition (code, name, colour) VALUES ('D1', 'Botola Pro D1', 'WHITE');
+INSERT INTO external_competition (code, name, colour) VALUES ('D2', 'Botola D2', 'WHITE');
+INSERT INTO external_competition (code, name, colour) VALUES ('CT', 'Coupe du Trône', 'YELLOW');
+INSERT INTO external_competition (code, name, colour) VALUES ('CL', 'CAF Champions League', 'RED');
+INSERT INTO external_competition (code, name, colour) VALUES ('CC', 'CAF Confederation Cup', 'RED');
+INSERT INTO external_competition (code, name, colour) VALUES ('ASC', 'Arab Super Cup', 'AQUA');
+INSERT INTO external_competition (code, name, colour) VALUES ('UAFA', 'UAFA Club Cup', 'AQUA');
+INSERT INTO external_competition (code, name, colour) VALUES ('CHAN', 'CHAN', 'GREY_25_PERCENT');
+INSERT INTO external_competition (code, name, colour) VALUES ('CLHOME', 'CAF Champions League (home)', 'RED');
+INSERT INTO external_competition (code, name, colour) VALUES ('CCHOME', 'CAF Confederation Cup (home)', 'RED');
+INSERT INTO external_competition (code, name, colour) VALUES ('FIFA', 'FIFA window', 'GREY_25_PERCENT');
+INSERT INTO external_competition (code, name, colour) VALUES ('AC', 'Arab Cup', 'GREY_25_PERCENT');
+INSERT INTO external_competition (code, name, colour) VALUES ('WC', 'World Cup', 'GREY_25_PERCENT');
+INSERT INTO external_competition (code, name, colour) VALUES ('UAFAHOME', 'UAFA Club Cup (home)', 'AQUA');
+INSERT INTO external_competition (code, name, colour) VALUES ('ASLHOME', 'Arab Super League (home)', 'GREY_25_PERCENT');
+INSERT INTO external_competition (code, name, colour) VALUES ('ASL', 'Arab Super League', 'GREY_25_PERCENT');
+INSERT INTO external_competition (code, name, colour) VALUES ('CAN', 'AFCON', 'GREY_25_PERCENT');
+INSERT INTO external_competition (code, name, colour) VALUES ('F1', 'CNPFF D1', 'GREY_25_PERCENT');
+INSERT INTO external_competition (code, name, colour) VALUES ('F2', 'CNPFF D2', 'WHITE');

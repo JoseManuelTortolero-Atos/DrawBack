@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: match-state-season-cascade
+      author: calendar
+      changes:
+        - dropForeignKeyConstraint:
+            baseTableName: season_match_state
+            constraintName: fk_match_state_season
+        - addForeignKeyConstraint:
+            baseTableName: season_match_state
+            baseColumnNames: competition_season_id
+            referencedTableName: competition_season
+            referencedColumnNames: id
+            constraintName: fk_match_state_season
+            onDelete: CASCADE
+        - dropForeignKeyConstraint:
+            baseTableName: match_change_audit
+            constraintName: fk_match_audit_season
+        - addForeignKeyConstraint:
+            baseTableName: match_change_audit
+            baseColumnNames: competition_season_id
+            referencedTableName: competition_season
+            referencedColumnNames: id
+            constraintName: fk_match_audit_season
+            onDelete: CASCADE

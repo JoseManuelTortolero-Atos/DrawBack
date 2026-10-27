@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: planning-round-range
+      author: calendar
+      changes:
+        - addColumn:
+            tableName: planning_job
+            columns:
+              - column:
+                  name: first_round_to_assign
+                  type: INT
+                  defaultValueNumeric: 1
+                  constraints:
+                    nullable: false
+        - addColumn:
+            tableName: generation_version
+            columns:
+              - column:
+                  name: first_round_to_assign
+                  type: INT
+                  defaultValueNumeric: 1
+                  constraints:
+                    nullable: false

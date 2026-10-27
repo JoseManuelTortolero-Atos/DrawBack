@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: match-audit-actor-type
+      author: calendar
+      changes:
+        - addColumn:
+            tableName: match_change_audit
+            columns:
+              - column:
+                  name: actor_type
+                  type: VARCHAR(10)
+                  defaultValue: USER
+                  constraints:
+                    nullable: false
+        - sql:
+            sql: ALTER TABLE match_change_audit ADD CONSTRAINT ck_match_audit_actor_type CHECK (actor_type IN ('USER','SERVICE','SYSTEM'))

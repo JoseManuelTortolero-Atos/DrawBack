@@ -1,0 +1,62 @@
+name: calendar-morocco-03d-e2e
+
+# Entorno DESECHABLE para la validacion integral 03D (frontend + backend + BD).
+# Proyecto, volumenes, red, puertos y credenciales propios. No comparte nada con
+# calendar-morocco-p02-it-20261025 (calendar_morocco_it) ni con morocco-new-*.
+# Credenciales: .env.calendar-morocco-e2e (ignorado por Git, generado con openssl).
+services:
+  postgres:
+    image: postgres:17.6-alpine
+    restart: "no"
+    environment:
+      POSTGRES_DB: calendar_morocco_e2e
+      POSTGRES_USER: calendar_e2e
+      POSTGRES_PASSWORD: ${CALENDAR_E2E_PG_PASSWORD:?Set CALENDAR_E2E_PG_PASSWORD in .env.calendar-morocco-e2e}
+    ports:
+      - "127.0.0.1:55433:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - e2e
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U calendar_e2e -d calendar_morocco_e2e"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 10s
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    platform: linux/amd64
+    restart: "no"
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Developer
+      MSSQL_SA_PASSWORD: ${CALENDAR_E2E_MSSQL_SA_PASSWORD:?Set CALENDAR_E2E_MSSQL_SA_PASSWORD in .env.calendar-morocco-e2e}
+      MSSQL_MEMORY_LIMIT_MB: "3072"
+    mem_limit: 4g
+    shm_size: 1gb
+    ports:
+      - "127.0.0.1:11435:1433"
+    volumes:
+      - mssql-data:/var/opt/mssql
+    networks:
+      - e2e
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - /opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P "$$MSSQL_SA_PASSWORD" -Q "SELECT 1" -b
+      interval: 10s
+      timeout: 10s
+      retries: 30
+      start_period: 90s
+
+volumes:
+  postgres-data:
+    name: calendar-morocco-03d-e2e-postgres-data
+  mssql-data:
+    name: calendar-morocco-03d-e2e-mssql-data
+
+networks:
+  e2e:
+    name: calendar-morocco-03d-e2e-net

@@ -1,0 +1,5 @@
+D1: matches=40 expected=40 diffs=0 (reverse=false)
+D2: matches=40 expected=40 diffs=0 (reverse=false)
+F1: matches=30 expected=30 diffs=0 (reverse=false)
+F2: matches=30 expected=30 diffs=0 (reverse=false)
+PARITY OK

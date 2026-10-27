@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendar Morocco — Guía de usuario</title>
+<style>
+  :root {
+    --rojo-oscuro-1: #7a0e14;
+    --rojo-oscuro-2: #a01620;
+    --dorado: #d4af37;
+    --ambar: #b8860b;
+    --verde: #2e7d32;
+    --azul: #1565c0;
+    --texto: #2b2b2b;
+    --gris-claro: #f4f5f7;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--texto);
+    background: var(--gris-claro);
+  }
+
+  header.top-header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 60px;
+    background: linear-gradient(90deg, var(--rojo-oscuro-1), var(--rojo-oscuro-2));
+    color: var(--dorado);
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  }
+
+  nav.sidebar {
+    position: fixed;
+    top: 60px; left: 0; bottom: 0;
+    width: 260px;
+    background: linear-gradient(180deg, var(--rojo-oscuro-1), var(--rojo-oscuro-2));
+    overflow-y: auto;
+    padding: 16px 0 40px 0;
+    z-index: 90;
+  }
+
+  nav.sidebar .group-title {
+    color: var(--dorado);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 18px 20px 6px 20px;
+    font-weight: 700;
+  }
+
+  nav.sidebar a {
+    display: block;
+    color: #f2e6c9;
+    text-decoration: none;
+    padding: 8px 20px 8px 28px;
+    font-size: 0.92rem;
+    border-left: 3px solid transparent;
+  }
+
+  nav.sidebar a:hover {
+    background: rgba(255,255,255,0.08);
+  }
+
+  nav.sidebar a.active {
+    border-left-color: var(--dorado);
+    background: rgba(212,175,55,0.15);
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  main.content {
+    margin-left: 260px;
+    margin-top: 60px;
+    padding: 32px 40px 80px 40px;
+    max-width: 980px;
+  }
+
+  .top-note {
+    background: #fff8e6;
+    border-left: 4px solid var(--dorado);
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+    padding: 24px 28px;
+    margin-bottom: 28px;
+  }
+
+  .card h2.section-title {
+    border-left: 5px solid var(--rojo-oscuro-2);
+    background: #fdf1f1;
+    padding: 10px 16px;
+    margin: -24px -28px 20px -28px;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.3rem;
+  }
+
+  .card h3 {
+    color: var(--rojo-oscuro-1);
+    margin-top: 28px;
+  }
+
+  .step {
+    display: flex;
+    gap: 14px;
+    margin: 14px 0;
+    align-items: flex-start;
+  }
+
+  .step .badge {
+    flex: 0 0 auto;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: var(--rojo-oscuro-2);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+
+  table.field-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 0.92rem;
+  }
+  table.field-table th, table.field-table td {
+    border: 1px solid #e0e0e0;
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.field-table th {
+    background: #f7f2f2;
+  }
+
+  code {
+    background: #eef0f3;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.88em;
+  }
+  pre {
+    background: #1e1e2e;
+    color: #e6e6e6;
+    padding: 14px 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.85rem;
+  }
+
+  .box {
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin: 14px 0;
+    font-size: 0.92rem;
+  }
+  .box.warning { background: #fff6e5; border-left: 4px solid var(--ambar); }
+  .box.tip     { background: #eef8ee; border-left: 4px solid var(--verde); }
+  .box.info    { background: #e9f1fb; border-left: 4px solid var(--azul); }
+  .box strong.label { display:block; margin-bottom: 4px; }
+
+  .screenshot-placeholder {
+    background: repeating-linear-gradient(45deg, #f0f0f0, #f0f0f0 10px, #e6e6e6 10px, #e6e6e6 20px);
+    border: 1px dashed #b5b5b5;
+    border-radius: 8px;
+    padding: 40px 16px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin: 14px 0 6px 0;
+  }
+  .caption {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 18px;
+  }
+
+  .next-step {
+    margin-top: 18px;
+    font-weight: 600;
+    color: var(--rojo-oscuro-1);
+  }
+</style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">5TV63Z7VS3W3-430655665-172979</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">15b8c522-694e-4334-b108-5b780d5c1153</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://atos365.sharepoint.com/sites/190017457/_layouts/15/DocIdRedir.aspx?ID=5TV63Z7VS3W3-430655665-172979, 5TV63Z7VS3W3-430655665-172979</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+
+<header class="top-header">⚽ Calendar Morocco — Guía de usuario</header>
+
+<nav class="sidebar" id="sidebar">
+  <div class="group-title">🔧 1. Instalación y arranque</div>
+  <a href="#instalacion" data-nav>Instalación y arranque</a>
+
+  <div class="group-title">📅 2. Creación de horarios de cada jornada</div>
+  <a href="#excel-manager" data-nav>Excel Manager</a>
+  <a href="#generate-calendar" data-nav>Generate Calendar</a>
+  <a href="#generated-results" data-nav>Generated Results</a>
+
+  <div class="group-title">🎲 3. Creación del calendario inicial</div>
+  <a href="#calendario-inicial" data-nav>Calendario inicial para el sorteo</a>
+</nav>
+
+<main class="content">
+
+  <div class="top-note">
+    📷 Para completar esta guía, añade las capturas PNG a la carpeta <code>/screens/</code> usando el nombre de fichero indicado bajo cada placeholder.
+  </div>
+
+  <!-- ================= BLOQUE 1 ================= -->
+  <section class="card" id="instalacion">
+    <h2 class="section-title">1. Instalación y arranque</h2>
+
+    <h3>Repositorios necesarios</h3>
+    <p>Calendar Morocco se compone de dos repositorios independientes que debes descargar en local, ambos en la rama <code>develop</code>:</p>
+    <ul>
+      <li><code>CalendarGenerateBack</code> — el servicio que calcula los calendarios.</li>
+      <li><code>CalendarGenerateFront</code> — la aplicación web desde la que trabajas.</li>
+    </ul>
+    <pre>git clone git@github.com:ES-MEV-APPLICATIONS/CalendarGenerateBack.git
+git clone git@github.com:ES-MEV-APPLICATIONS/CalendarGenerateFront.git
+
+git -C CalendarGenerateBack switch develop
+git -C CalendarGenerateFront switch develop</pre>
+
+    <h3>Requisitos previos</h3>
+    <table class="field-table">
+      <tr><th>Necesitas</th><th>Para qué sirve</th></tr>
+      <tr><td>Acceso a GitHub</td><td>Descargar los dos repositorios.</td></tr>
+      <tr><td>Java 21</td><td>Ejecutar el servicio de generación.</td></tr>
+      <tr><td>Maven (incluido como <code>mvnw</code>)</td><td>Compilar y arrancar el servicio.</td></tr>
+      <tr><td>Node.js + pnpm <code>10.29.3</code></td><td>Arrancar la aplicación web.</td></tr>
+    </table>
+
+    <div class="box tip">
+      <strong class="label">💡 Consejo</strong>
+      Antes de empezar, comprueba las versiones instaladas: <code>java -version</code> y <code>pnpm --version</code>. Si <code>pnpm --version</code> ya devuelve <code>10.29.3</code>, no necesitas instalar nada más para trabajar con el proyecto.
+    </div>
+
+    <h3>Arrancar el servicio (puerto 8080)</h3>
+    <pre>cd CalendarGenerateBack
+sh mvnw spring-boot:run</pre>
+    <p>Cuando el servicio haya arrancado, comprueba que responde abriendo en el navegador:</p>
+    <pre>http://localhost:8080/actuator/health</pre>
+
+    <h3>Arrancar la aplicación web (puerto 4200)</h3>
+    <pre>cd CalendarGenerateFront
+pnpm install
+pnpm start</pre>
+    <p>Cuando aparezca <code>Local: http://localhost:4200/</code> en la terminal, abre esa dirección en el navegador.</p>
+
+    <div class="box warning">
+      <strong class="label">⚠️ Si la aplicación web no carga datos</strong>
+      Comprueba primero que el servicio del punto anterior (puerto 8080) está arrancado y responde correctamente. Si el servicio no está disponible, la aplicación web no podrá mostrar competiciones ni generar calendarios.
+    </div>
+
+    <h3>Alternativa: arrancar desde Visual Studio Code</h3>
+    <div class="step"><div class="badge">1</div><div>Abre <code>CalendarGenerateBack</code> en Visual Studio Code y pulsa <strong>F5</strong> (configuración de depuración incluida en el repositorio).</div></div>
+    <div class="step"><div class="badge">2</div><div>Abre <code>CalendarGenerateFront</code> en una segunda ventana y ejecuta <code>pnpm install</code> (la primera vez) y después <code>pnpm start</code> en su terminal integrada.</div></div>
+    <div class="step"><div class="badge">3</div><div>Abre <code>http://localhost:4200</code> en el navegador.</div></div>
+
+    <h3>Actualizar los repositorios</h3>
+    <p>Cuando ya tengas ambos repositorios descargados y quieras trabajar con la última versión de <code>develop</code>:</p>
+    <pre>git -C CalendarGenerateBack pull --ff-only origin develop
+git -C CalendarGenerateFront pull --ff-only origin develop</pre>
+
+    <div class="screenshot-placeholder">📷 Añadir captura: screens/instalacion-terminales.png</div>
+    <div class="caption">Figura 1 · Instalación — dos terminales, servicio y aplicación web arrancados.</div>
+  </section>
+
+  <!-- ================= BLOQUE 2 ================= -->
+
+  <section class="card" id="excel-manager">
+    <h2 class="section-title">2.1 Excel Manager</h2>
+    <p><strong>Propósito.</strong> Pantalla para consultar, subir, descargar y borrar los ficheros Excel de entrada de una competición y temporada, antes de generar horarios.</p>
+
+    <p><strong>Cómo llegar.</strong> Menú principal → <em>Excel Manager</em>.</p>
+
+    <h3>Campos y botones</h3>
+    <table class="field-table">
+      <tr><th>Campo / botón</th><th>Qué hace</th></tr>
+      <tr><td><code>Competition</code></td><td>Selecciona la competición.</td></tr>
+      <tr><td><code>Refresh</code></td><td>Actualiza la lista de competiciones y temporadas disponibles.</td></tr>
+      <tr><td><code>Season</code></td><td>Selecciona la temporada.</td></tr>
+      <tr><td>Lista "Available Excel Files"</td><td>Muestra los ficheros ya subidos para esa competición/temporada, con tamaño y fecha.</td></tr>
+      <tr><td><code>Download</code> (por fichero)</td><td>Descarga ese Excel para revisarlo.</td></tr>
+      <tr><td><code>Delete</code> (por fichero)</td><td>Elimina ese fichero. Solo hazlo si estás seguro de que ya no se necesita.</td></tr>
+      <tr><td>Botón "i" junto a "Upload Excel File"</td><td>Muestra el formato de nombre esperado para el fichero.</td></tr>
+      <tr><td>Selector de fichero (<code>.xlsx</code>)</td><td>Elige el nuevo Excel a subir.</td></tr>
+      <tr><td><code>Upload</code></td><td>Sube el fichero seleccionado.</td></tr>
+      <tr><td><code>Download Initial Excel</code></td><td>Descarga la plantilla inicial de la liga, cuando todavía no se ha subido ningún Excel propio para esa competición/temporada.</td></tr>
+    </table>
+
+    <h3>Qué puede hacer el usuario</h3>
+    <div class="step"><div class="badge">1</div><div>Selecciona <code>Competition</code> y <code>Season</code>.</div></div>
+    <div class="step"><div class="badge">2</div><div>Pulsa <code>Refresh</code> y revisa los ficheros ya disponibles.</div></div>
+    <div class="step"><div class="badge">3</div><div>Si es la primera vez, descarga el Excel inicial con <code>Download Initial Excel</code> y utilízalo como base.</div></div>
+    <div class="step"><div class="badge">4</div><div>Prepara la nueva versión del fichero (siguiente apartado) y selecciónala con el campo de subida.</div></div>
+    <div class="step"><div class="badge">5</div><div>Pulsa <code>Upload</code>.</div></div>
+    <div class="step"><div class="badge">6</div><div>Comprueba que aparece en la lista de ficheros disponibles.</div></div>
+
+    <h3>Convención de nombre del fichero</h3>
+    <p>La aplicación valida el nombre del fichero antes de aceptarlo. El mensaje real que muestra cuando el nombre no es válido es:</p>
+    <div class="box warning">
+      <strong class="label">⚠️ Mensaje real de la aplicación</strong>
+      <em>"Use this pattern (case-insensitive): <code>CalendarD1-v&lt;number&gt;.xlsx</code>". Ejemplos: <code>CalendarD1-v0.xlsx</code>, <code>CalendarD2-v5.xlsx</code>.</em>
+    </div>
+    <p>En la práctica, trabaja siempre incrementando la versión sobre el último Excel válido: <code>Initial → V0 → V1 → V2…</code>. No sobrescribas inmediatamente la última versión validada; conserva el fichero anterior hasta validar el nuevo.</p>
+
+    <h3>Competiciones externas y aplazamientos</h3>
+    <p>El Excel puede contener información relacionada con competiciones externas (por ejemplo, participación en torneos continentales) que obligan a mover un partido de liga a otra fecha. Esa información no debe eliminarse solo porque no sea una fila "normal" de la competición: puede condicionar qué fechas están disponibles para el cálculo de horarios.</p>
+
+    <h3>Dependencia entre Primera y Segunda División</h3>
+    <p>Los horarios de Segunda División deben prepararse después de haber generado y validado las mismas jornadas de Primera División (D1 antes que D2, F1 antes que F2), incorporando en el Excel de Segunda la información ya consolidada de Primera.</p>
+
+    <div class="screenshot-placeholder">📷 Añadir captura: screens/ExcelManager.png</div>
+    <div class="caption">Figura 2 · Excel Manager — selección de competición/temporada, lista de ficheros y subida de una nueva versión.</div>
+    <div class="next-step">Siguiente paso → Generate Calendar</div>
+  </section>
+
+  <section class="card" id="generate-calendar">
+    <h2 class="section-title">2.2 Generate Calendar</h2>
+    <p><strong>Propósito.</strong> Pantalla desde la que se ejecuta el cálculo de horarios de las jornadas, a partir del Excel ya subido en Excel Manager.</p>
+    <p><strong>Cómo llegar.</strong> Menú principal → <em>Generate Calendar</em> (pantalla de inicio de la aplicación).</p>
+
+    <h3>Campos y botones</h3>
+    <table class="field-table">
+      <tr><th>Campo / botón</th><th>Qué hace</th></tr>
+      <tr><td><code>Competition</code></td><td>Competición que quieres generar.</td></tr>
+      <tr><td><code>Refresh</code></td><td>Refresca competiciones y temporadas disponibles.</td></tr>
+      <tr><td><code>Season</code></td><td>Temporada de trabajo.</td></tr>
+      <tr><td><code>Excel File From Storage</code></td><td>Excel ya subido en Excel Manager para esa competición y temporada.</td></tr>
+      <tr><td><code>Last Round To Assign</code></td><td>Última jornada que debe quedar procesada (entero mayor que 0).</td></tr>
+      <tr><td><code>Generate Calendar</code></td><td>Inicia el cálculo de horarios.</td></tr>
+      <tr><td><code>Generation Logs</code></td><td>Panel con el detalle de la ejecución.</td></tr>
+      <tr><td><code>Refresh Logs</code></td><td>Actualiza los logs mostrados.</td></tr>
+    </table>
+
+    <h3>Qué significa exactamente "Last Round To Assign"</h3>
+    <p>Es la <strong>última jornada que debe quedar procesada</strong>, no cuántas jornadas nuevas quieres generar. Ejemplo: si el Excel seleccionado contiene información de las jornadas 1 a 5, selecciona ese fichero e introduce <code>5</code>.</p>
+
+    <h3>Validaciones reales de la pantalla</h3>
+    <div class="box warning">
+      <strong class="label">⚠️ Mensajes reales de la aplicación</strong>
+      Si falta competición, temporada o Excel: <em>"Please select competition, season and Excel file."</em><br>
+      Si <code>Last Round To Assign</code> no es un entero mayor que 0: <em>"Please set a valid Last Round To Assign (&gt; 0)."</em>
+    </div>
+
+    <h3>Qué puede hacer el usuario</h3>
+    <div class="step"><div class="badge">1</div><div>Selecciona <code>Competition</code>.</div></div>
+    <div class="step"><div class="badge">2</div><div>Selecciona <code>Season</code>.</div></div>
+    <div class="step"><div class="badge">3</div><div>Selecciona el Excel correcto en <code>Excel File From Storage</code>.</div></div>
+    <div class="step"><div class="badge">4</div><div>Introduce <code>Last Round To Assign</code>.</div></div>
+    <div class="step"><div class="badge">5</div><div>Pulsa <code>Generate Calendar</code>.</div></div>
+    <div class="step"><div class="badge">6</div><div>Espera a que termine la ejecución y descarga el Excel resultante.</div></div>
+    <div class="step"><div class="badge">7</div><div>Revisa <code>Generation Logs</code> (y su <code>Generation ID</code>) si necesitas comprobar el detalle de la ejecución.</div></div>
+    <div class="step"><div class="badge">8</div><div>Si es Primera División, valida el resultado antes de preparar el Excel de Segunda División.</div></div>
+
+    <div class="box tip">
+      <strong class="label">💡 Consejo</strong>
+      Para la siguiente solicitud, parte siempre del resultado ya validado, conserva los horarios generados, añade los nuevos partidos/jornadas y guarda la siguiente versión antes de volver a generar.
+    </div>
+
+    <div class="screenshot-placeholder">📷 Añadir captura: screens/GenerateCalendar.png</div>
+    <div class="caption">Figura 3 · Generate Calendar — selección de competición, temporada, Excel almacenado, última jornada y panel de logs.</div>
+    <div class="next-step">Siguiente paso → Generated Results</div>
+  </section>
+
+  <section class="card" id="generated-results">
+    <h2 class="section-title">2.3 Generated Results</h2>
+    <p><strong>Propósito.</strong> Consultar y descargar lo que ya se ha generado para una competición y temporada, agrupado por versión.</p>
+    <p><strong>Cómo llegar.</strong> Menú principal → <em>Generated Results</em>.</p>
+
+    <h3>Campos y botones</h3>
+    <table class="field-table">
+      <tr><th>Campo / botón</th><th>Qué hace</th></tr>
+      <tr><td><code>Competition</code></td><td>Selecciona la competición.</td></tr>
+      <tr><td><code>Refresh</code></td><td>Actualiza competiciones y temporadas disponibles.</td></tr>
+      <tr><td><code>Season</code></td><td>Selecciona la temporada.</td></tr>
+      <tr><td>Lista "Available Generated Files (fullCalendar + ZIP)"</td><td>Muestra los resultados agrupados por versión.</td></tr>
+      <tr><td><code>Download</code></td><td>Descarga el Excel (fullCalendar) de esa versión.</td></tr>
+      <tr><td><code>Download ZIP</code></td><td>Descarga el paquete ZIP completo de esa versión.</td></tr>
+    </table>
+
+    <h3>Qué puede hacer el usuario</h3>
+    <div class="step"><div class="badge">1</div><div>Selecciona <code>Competition</code> y <code>Season</code>.</div></div>
+    <div class="step"><div class="badge">2</div><div>Pulsa <code>Refresh</code>.</div></div>
+    <div class="step"><div class="badge">3</div><div>Localiza la versión que necesitas.</div></div>
+    <div class="step"><div class="badge">4</div><div>Pulsa <code>Download</code> para el XLSX o <code>Download ZIP</code> para el paquete completo.</div></div>
+
+    <div class="box info">
+      <strong class="label">ℹ️ Si el sistema no responde</strong>
+      La pantalla muestra el mensaje <em>"The system is down."</em> cuando el servicio no está disponible. Comprueba el arranque del servicio (Bloque 1) antes de continuar.
+    </div>
+
+    <div class="screenshot-placeholder">📷 Añadir captura: screens/GeneratedResults.png</div>
+    <div class="caption">Figura 4 · Generated Results — resultados agrupados por versión, descarga de XLSX y ZIP.</div>
+  </section>
+
+  <!-- ================= BLOQUE 3 ================= -->
+  <section class="card" id="calendario-inicial">
+    <h2 class="section-title">3. Creación del calendario inicial para el sorteo</h2>
+
+    <div class="box info">
+      <strong class="label">ℹ️ Importante</strong>
+      Este paso no sustituye a la generación de horarios de las jornadas. Primero se define quién juega contra quién en cada jornada (este apartado); después se calculan fechas y horas desde la aplicación web (Bloque 2).
+    </div>
+
+    <p>Este proceso se usa <strong>al principio de la temporada</strong>, cuando todavía no existe un calendario base para una competición. Es distinto del uso diario descrito en el Bloque 2 y no está disponible desde la aplicación web: lo ejecuta el equipo técnico desde el propio repositorio del servicio.</p>
+
+    <h3>Qué genera</h3>
+    <p>Genera varias propuestas de emparejamientos por jornada (quién juega contra quién), no una única propuesta. Entre esas propuestas se elige después la definitiva mediante sorteo.</p>
+
+    <h3>Antes de empezar</h3>
+    <ul>
+      <li>Temporada y competición confirmadas.</li>
+      <li>Lista definitiva de equipos, con ascensos y descensos ya incorporados.</li>
+      <li>Restricciones iniciales revisadas (por ejemplo, equipos que no deben coincidir en casa el mismo día).</li>
+    </ul>
+
+    <h3>Cómo se obtienen las propuestas</h3>
+    <p>Se ejecuta la herramienta generadora de propuestas de sorteo, que crea las combinaciones válidas de emparejamientos según las restricciones configuradas para la temporada.</p>
+    <div class="box info">
+      <strong class="label">ℹ️ Dato verificado en el código</strong>
+      El número de propuestas generadas depende de la configuración de la temporada. En la configuración actual del repositorio, ese valor está fijado a 1.000 propuestas; confírmalo con el equipo antes de dar por bueno este número para una temporada nueva.
+    </div>
+
+    <h3>Cómo se obtiene el Excel para el sorteo</h3>
+    <p>A continuación se exportan esas propuestas a un fichero Excel, usando la plantilla de la competición correspondiente. Ese Excel es el que se utiliza durante el sorteo para elegir la propuesta definitiva.</p>
+
+    <h3>Después del sorteo</h3>
+    <div class="step"><div class="badge">1</div><div>Conserva el Excel de la propuesta elegida como calendario base de la temporada para esa competición.</div></div>
+    <div class="step"><div class="badge">2</div><div>Prepara la versión de entrada correspondiente (Excel <code>Initial</code>/<code>V0</code>).</div></div>
+    <div class="step"><div class="badge">3</div><div>Súbela mediante <em>Excel Manager</em>.</div></div>
+    <div class="step"><div class="badge">4</div><div>Continúa con el flujo del Bloque 2 (Excel Manager → Generate Calendar → Generated Results) para calcular los horarios de las jornadas.</div></div>
+
+    <div class="box warning">
+      <strong class="label">⚠️ No confundir</strong>
+      Ejecutar este apartado no calcula fechas ni horas de partidos. Solo obtiene el calendario base (emparejamientos). El cálculo de horarios se hace siempre después, desde la aplicación web.
+    </div>
+  </section>
+
+</main>
+
+<script>
+  const links = document.querySelectorAll('nav.sidebar a[data-nav]');
+  const sections = Array.from(links).map(a => document.querySelector(a.getAttribute('href')));
+
+  function highlightActive() {
+    let currentIndex = 0;
+    const scrollPos = window.scrollY + 90;
+    sections.forEach((sec, i) => {
+      if (sec && sec.offsetTop <= scrollPos) currentIndex = i;
+    });
+    links.forEach((a, i) => a.classList.toggle('active', i === currentIndex));
+  }
+
+  window.addEventListener('scroll', highlightActive);
+  window.addEventListener('load', highlightActive);
+</script>
+
+</body>
+</html>

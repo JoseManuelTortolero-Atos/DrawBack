@@ -1,0 +1,29 @@
+# Workflow corporativo (ci-workflows 1.18.32): compila con Maven (Java 21) y publica la imagen Docker.
+name: On Demand Maven Package & Build Docker Image Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      skip_tests:
+        description: Skip Tests
+        type: boolean
+        default: true
+        required: false
+      skip_security_analysis:
+        description: Skip Docker Image security checks
+        type: boolean
+        default: true
+        required: false
+
+jobs:
+  call-docker-workflow-workflow:
+    uses: ES-MEV-APPLICATIONS/ci-workflows/.github/workflows/maven-docker-workflow.yml@1.18.32
+    with:
+      skip_tests: ${{ inputs.skip_tests }}
+      skip_security_analysis: ${{ inputs.skip_security_analysis }}
+      mvn_command: "-B -U -T 1.5C package -DskipTests"
+      add_mutiple_registries: true
+      rename_output_jar: true
+      skip_repository_name_for_image_name: true
+      java_version: "21"
+    secrets: inherit

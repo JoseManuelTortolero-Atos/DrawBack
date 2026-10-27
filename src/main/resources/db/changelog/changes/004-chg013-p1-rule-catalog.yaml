@@ -1,0 +1,121 @@
+databaseChangeLog:
+  - changeSet:
+      id: chg013-p1-rule-catalog-and-constraint-rule
+      author: calendar
+      changes:
+        - createTable:
+            tableName: rule_type_catalog
+            columns:
+              - column: {name: federation_code, type: VARCHAR(16), constraints: {nullable: false}}
+              - column: {name: rule_type, type: VARCHAR(80), constraints: {nullable: false}}
+              - column: {name: technical_code, type: VARCHAR(120), constraints: {nullable: false}}
+              - column: {name: functional_name, type: VARCHAR(160), constraints: {nullable: false}}
+              - column: {name: functional_description, type: CLOB, constraints: {nullable: false}}
+              - column: {name: phase_code, type: VARCHAR(8), constraints: {nullable: false}}
+              - column: {name: category_code, type: VARCHAR(40), constraints: {nullable: false}}
+              - column: {name: parameter_schema, type: CLOB, constraints: {nullable: false}}
+              - column: {name: support_status, type: VARCHAR(40), constraints: {nullable: false}}
+              - column: {name: engine_class, type: VARCHAR(160)}
+              - column: {name: engine_version, type: VARCHAR(32)}
+              - column: {name: editable_definition, type: BOOLEAN, defaultValueBoolean: true, constraints: {nullable: false}}
+              - column: {name: enabled, type: BOOLEAN, defaultValueBoolean: true, constraints: {nullable: false}}
+              - column: {name: sort_order, type: INT, constraints: {nullable: false}}
+        - addPrimaryKey: {tableName: rule_type_catalog, columnNames: "federation_code,rule_type", constraintName: pk_rule_type_catalog}
+        - createIndex: {tableName: rule_type_catalog, indexName: ix_rule_type_catalog_enabled, columns: [{column: {name: federation_code}}, {column: {name: enabled}}, {column: {name: sort_order}}]}
+        - createTable:
+            tableName: rule_type_allowed_scope
+            columns:
+              - column: {name: federation_code, type: VARCHAR(16), constraints: {nullable: false}}
+              - column: {name: rule_type, type: VARCHAR(80), constraints: {nullable: false}}
+              - column: {name: scope_type, type: VARCHAR(48), constraints: {nullable: false}}
+        - addPrimaryKey: {tableName: rule_type_allowed_scope, columnNames: "federation_code,rule_type,scope_type", constraintName: pk_rule_type_allowed_scope}
+        - addForeignKeyConstraint:
+            baseTableName: rule_type_allowed_scope
+            baseColumnNames: federation_code,rule_type
+            referencedTableName: rule_type_catalog
+            referencedColumnNames: federation_code,rule_type
+            constraintName: fk_rule_type_allowed_scope_catalog
+        - addColumn:
+            tableName: constraint_rule
+            columns:
+              - column: {name: int_param, type: INT}
+        - sql:
+            dbms: postgresql
+            sql: |
+              ALTER TABLE constraint_rule DROP CONSTRAINT IF EXISTS constraint_rule_rule_type_check;
+              ALTER TABLE constraint_rule ADD CONSTRAINT ck_constraint_rule_rule_type CHECK (
+                rule_type IN (
+                  'DerbyTeams','MatchNotInRound','SeparateMatches','LimitHomeTogether','PlayTogether',
+                  'NotConsecutiveFarAway','LimitAgainstTeamsInRounds','LimitAgainstTeamsInRoundsHome',
+                  'ForcePositions','VenueUnavailable','FixedHomeDate','LEGACY_CHECK'
+                )
+              );
+        - sql:
+            dbms: mssql
+            splitStatements: false
+            sql: |
+              DECLARE @dropSql NVARCHAR(MAX) = N'';
+              SELECT @dropSql = @dropSql + N'ALTER TABLE constraint_rule DROP CONSTRAINT [' + cc.name + N'];'
+              FROM sys.check_constraints cc
+              WHERE cc.parent_object_id = OBJECT_ID(N'constraint_rule');
+              IF LEN(@dropSql) > 0 EXEC sp_executesql @dropSql;
+              ALTER TABLE constraint_rule ADD CONSTRAINT ck_constraint_rule_rule_type CHECK (
+                rule_type IN (
+                  'DerbyTeams','MatchNotInRound','SeparateMatches','LimitHomeTogether','PlayTogether',
+                  'NotConsecutiveFarAway','LimitAgainstTeamsInRounds','LimitAgainstTeamsInRoundsHome',
+                  'ForcePositions','VenueUnavailable','FixedHomeDate','LEGACY_CHECK'
+                )
+              );
+        # Catalogos de referencia cargados desde CSV (data/). FRMF completo; DEMO con los tipos P1.
+        - loadData:
+            tableName: rule_type_catalog
+            file: ../data/rule_type_catalog.csv
+            relativeToChangelogFile: true
+            encoding: UTF-8
+            separator: ','
+            quotchar: '"'
+            columns:
+              - column: {name: federation_code, type: STRING}
+              - column: {name: rule_type, type: STRING}
+              - column: {name: technical_code, type: STRING}
+              - column: {name: functional_name, type: STRING}
+              - column: {name: functional_description, type: STRING}
+              - column: {name: phase_code, type: STRING}
+              - column: {name: category_code, type: STRING}
+              - column: {name: parameter_schema, type: STRING}
+              - column: {name: support_status, type: STRING}
+              - column: {name: engine_class, type: STRING}
+              - column: {name: engine_version, type: STRING}
+              - column: {name: editable_definition, type: BOOLEAN}
+              - column: {name: enabled, type: BOOLEAN}
+              - column: {name: sort_order, type: NUMERIC}
+        - loadData:
+            tableName: rule_type_allowed_scope
+            file: ../data/rule_type_allowed_scope.csv
+            relativeToChangelogFile: true
+            encoding: UTF-8
+            separator: ','
+            quotchar: '"'
+            columns:
+              - column: {name: federation_code, type: STRING}
+              - column: {name: rule_type, type: STRING}
+              - column: {name: scope_type, type: STRING}
+      rollback:
+        - sql:
+            dbms: postgresql
+            sql: |
+              ALTER TABLE constraint_rule DROP CONSTRAINT IF EXISTS ck_constraint_rule_rule_type;
+              ALTER TABLE constraint_rule ADD CONSTRAINT constraint_rule_rule_type_check CHECK (
+                rule_type IN ('MatchNotInRound','SeparateMatches','VenueUnavailable','FixedHomeDate','LEGACY_CHECK')
+              );
+        - sql:
+            dbms: mssql
+            sql: |
+              IF EXISTS (SELECT 1 FROM sys.check_constraints WHERE name = N'ck_constraint_rule_rule_type')
+                ALTER TABLE constraint_rule DROP CONSTRAINT ck_constraint_rule_rule_type;
+              ALTER TABLE constraint_rule ADD CONSTRAINT ck_constraint_rule_rule_type CHECK (
+                rule_type IN ('MatchNotInRound','SeparateMatches','VenueUnavailable','FixedHomeDate','LEGACY_CHECK')
+              );
+        - dropColumn: {tableName: constraint_rule, columnName: int_param}
+        - dropTable: {tableName: rule_type_allowed_scope}
+        - dropTable: {tableName: rule_type_catalog}

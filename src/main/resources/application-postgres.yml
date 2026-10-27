@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/calendar}
+    username: ${DB_USERNAME:calendar}
+    password: ${DB_PASSWORD:calendar}

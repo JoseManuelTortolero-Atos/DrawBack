@@ -1,0 +1,902 @@
+databaseChangeLog:
+  - logicalFilePath: db/changelog/db.changelog-master.yaml
+  - changeSet:
+      id: b26-seed-0001-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0001_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0001-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0001_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0002-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0002_competition.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0002-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0002_competition.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0003-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0003_team.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0003-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0003_team.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0004-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0004_external_competition.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0004-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0004_external_competition.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0005-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0005_competition_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0005-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0005_competition_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0006-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0006_competition_season_team.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0006-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0006_competition_season_team.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0007-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0007_timeslot.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0007-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0007_timeslot.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0008-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0008_assign_group.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0008-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0008_assign_group.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0009-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0009_rest_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0009-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0009_rest_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0010-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0010_team_pair_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0010-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0010_team_pair_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0011-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0011_constraint_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0011-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0011_constraint_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0012-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0012_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0012-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0012_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0013-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0013_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0013-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0013_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0014-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0014_generation_version.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0014-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0014_generation_version.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0015-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0015_generated_match.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0015-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0015_generated_match.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0016-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0016_generation_file.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0016-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0016_generation_file.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0017-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0017_competition_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0017-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0017_competition_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0018-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0018_competition_season_team.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0018-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0018_competition_season_team.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0019-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0019_timeslot.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0019-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0019_timeslot.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0020-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0020_assign_group.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0020-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0020_assign_group.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0021-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0021_rest_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0021-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0021_rest_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0022-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0022_team_pair_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0022-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0022_team_pair_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0023-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0023_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0023-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0023_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0024-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0024_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0024-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0024_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0025-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0025_generation_version.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0025-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0025_generation_version.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0026-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0026_generated_match.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0026-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0026_generated_match.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0027-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0027_generation_file.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0027-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0027_generation_file.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0028-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0028_competition_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0028-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0028_competition_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0029-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0029_competition_season_team.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0029-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0029_competition_season_team.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0030-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0030_timeslot.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0030-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0030_timeslot.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0031-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0031_assign_group.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0031-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0031_assign_group.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0032-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0032_rest_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0032-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0032_rest_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0033-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0033_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0033-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0033_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0034-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0034_generation_version.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0034-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0034_generation_version.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0035-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0035_generated_match.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0035-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0035_generated_match.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0036-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0036_generation_file.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0036-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0036_generation_file.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0037-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0037_competition_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0037-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0037_competition_season.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0038-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0038_competition_season_team.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0038-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0038_competition_season_team.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0039-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0039_timeslot.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0039-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0039_timeslot.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0040-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0040_assign_group.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0040-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0040_assign_group.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0041-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0041_rest_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0041-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0041_rest_rule.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0042-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0042_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0042-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0042_fixture.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0043-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0043_generation_version.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0043-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0043_generation_version.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0044-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0044_generated_match.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0044-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0044_generated_match.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0045-postgresql
+      author: morocco-new
+      dbms: postgresql
+      changes:
+        - sqlFile:
+            path: baseline/seed/postgresql/0045_generation_file.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8
+  - changeSet:
+      id: b26-seed-0045-mssql
+      author: morocco-new
+      dbms: mssql
+      changes:
+        - sqlFile:
+            path: baseline/seed/mssql/0045_generation_file.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8

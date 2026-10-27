@@ -1,0 +1,242 @@
+sep=,
+Round,Home,Away,Home Name, Away Name
+1,CAK,IZK,Chabab Atlas Khénifra,Ittihad Zemmouri Khemisset
+1,KAC,WAF,Kénitra Athletic Club,Wydad Athletic Fassi
+1,USB,OCS,Union Sportive Boujaad,Olympique Club de Safi
+1,USYM,SCCM,Union Sportive Yacoub El Mansour,Sporting Club Chabab Mohammedia
+1,OD,OCK,Olympic Dcheira,Olympique Club Khouribga
+1,JSM,SM,Jeunesse Sportive Massira,Stade Marocain
+1,USMO,MCO,Union Sportive Musulmane dOujda,Mouloudia Club d'Oujda
+1,CJBG,JSS,Club Jeunesse Ben Guerir,Jeunesse Sportive Salmi
+2,WAF,USB,Wydad Athletic Fassi,Union Sportive Boujaad
+2,KAC,USYM,Kénitra Athletic Club,Union Sportive Yacoub El Mansour
+2,OCK,CAK,Olympique Club Khouribga,Chabab Atlas Khénifra
+2,SM,IZK,Stade Marocain,Ittihad Zemmouri Khemisset
+2,OCS,CJBG,Olympique Club de Safi,Club Jeunesse Ben Guerir
+2,SCCM,USMO,Sporting Club Chabab Mohammedia,Union Sportive Musulmane dOujda
+2,MCO,OD,Mouloudia Club d'Oujda,Olympic Dcheira
+2,JSS,JSM,Jeunesse Sportive Salmi,Jeunesse Sportive Massira
+3,CAK,SCCM,Chabab Atlas Khénifra,Sporting Club Chabab Mohammedia
+3,IZK,OCK,Ittihad Zemmouri Khemisset,Olympique Club Khouribga
+3,USB,KAC,Union Sportive Boujaad,Kénitra Athletic Club
+3,USYM,JSS,Union Sportive Yacoub El Mansour,Jeunesse Sportive Salmi
+3,OD,WAF,Olympic Dcheira,Wydad Athletic Fassi
+3,JSM,MCO,Jeunesse Sportive Massira,Mouloudia Club d'Oujda
+3,USMO,OCS,Union Sportive Musulmane dOujda,Olympique Club de Safi
+3,CJBG,SM,Club Jeunesse Ben Guerir,Stade Marocain
+4,WAF,USMO,Wydad Athletic Fassi,Union Sportive Musulmane dOujda
+4,KAC,JSM,Kénitra Athletic Club,Jeunesse Sportive Massira
+4,USB,USYM,Union Sportive Boujaad,Union Sportive Yacoub El Mansour
+4,SM,CAK,Stade Marocain,Chabab Atlas Khénifra
+4,OCS,IZK,Olympique Club de Safi,Ittihad Zemmouri Khemisset
+4,SCCM,OCK,Sporting Club Chabab Mohammedia,Olympique Club Khouribga
+4,MCO,CJBG,Mouloudia Club d'Oujda,Club Jeunesse Ben Guerir
+4,JSS,OD,Jeunesse Sportive Salmi,Olympic Dcheira
+5,CAK,OCS,Chabab Atlas Khénifra,Olympique Club de Safi
+5,IZK,MCO,Ittihad Zemmouri Khemisset,Mouloudia Club d'Oujda
+5,OCK,SM,Olympique Club Khouribga,Stade Marocain
+5,USYM,WAF,Union Sportive Yacoub El Mansour,Wydad Athletic Fassi
+5,OD,KAC,Olympic Dcheira,Kénitra Athletic Club
+5,JSM,USB,Jeunesse Sportive Massira,Union Sportive Boujaad
+5,USMO,JSS,Union Sportive Musulmane dOujda,Jeunesse Sportive Salmi
+5,CJBG,SCCM,Club Jeunesse Ben Guerir,Sporting Club Chabab Mohammedia
+6,WAF,CJBG,Wydad Athletic Fassi,Club Jeunesse Ben Guerir
+6,KAC,USMO,Kénitra Athletic Club,Union Sportive Musulmane dOujda
+6,USB,OD,Union Sportive Boujaad,Olympic Dcheira
+6,USYM,JSM,Union Sportive Yacoub El Mansour,Jeunesse Sportive Massira
+6,OCS,OCK,Olympique Club de Safi,Olympique Club Khouribga
+6,SCCM,SM,Sporting Club Chabab Mohammedia,Stade Marocain
+6,MCO,CAK,Mouloudia Club d'Oujda,Chabab Atlas Khénifra
+6,JSS,IZK,Jeunesse Sportive Salmi,Ittihad Zemmouri Khemisset
+7,CAK,JSS,Chabab Atlas Khénifra,Jeunesse Sportive Salmi
+7,IZK,SCCM,Ittihad Zemmouri Khemisset,Sporting Club Chabab Mohammedia
+7,OCK,MCO,Olympique Club Khouribga,Mouloudia Club d'Oujda
+7,SM,OCS,Stade Marocain,Olympique Club de Safi
+7,OD,USYM,Olympic Dcheira,Union Sportive Yacoub El Mansour
+7,JSM,WAF,Jeunesse Sportive Massira,Wydad Athletic Fassi
+7,USMO,USB,Union Sportive Musulmane dOujda,Union Sportive Boujaad
+7,CJBG,KAC,Club Jeunesse Ben Guerir,Kénitra Athletic Club
+8,WAF,CAK,Wydad Athletic Fassi,Chabab Atlas Khénifra
+8,KAC,IZK,Kénitra Athletic Club,Ittihad Zemmouri Khemisset
+8,USB,CJBG,Union Sportive Boujaad,Club Jeunesse Ben Guerir
+8,USYM,USMO,Union Sportive Yacoub El Mansour,Union Sportive Musulmane dOujda
+8,OD,JSM,Olympic Dcheira,Jeunesse Sportive Massira
+8,SCCM,OCS,Sporting Club Chabab Mohammedia,Olympique Club de Safi
+8,MCO,SM,Mouloudia Club d'Oujda,Stade Marocain
+8,JSS,OCK,Jeunesse Sportive Salmi,Olympique Club Khouribga
+9,CAK,OD,Chabab Atlas Khénifra,Olympic Dcheira
+9,IZK,USB,Ittihad Zemmouri Khemisset,Union Sportive Boujaad
+9,OCK,KAC,Olympique Club Khouribga,Kénitra Athletic Club
+9,SM,JSS,Stade Marocain,Jeunesse Sportive Salmi
+9,OCS,WAF,Olympique Club de Safi,Wydad Athletic Fassi
+9,SCCM,MCO,Sporting Club Chabab Mohammedia,Mouloudia Club d'Oujda
+9,USMO,JSM,Union Sportive Musulmane dOujda,Jeunesse Sportive Massira
+9,CJBG,USYM,Club Jeunesse Ben Guerir,Union Sportive Yacoub El Mansour
+10,WAF,OCK,Wydad Athletic Fassi,Olympique Club Khouribga
+10,KAC,CAK,Kénitra Athletic Club,Chabab Atlas Khénifra
+10,USB,SM,Union Sportive Boujaad,Stade Marocain
+10,USYM,IZK,Union Sportive Yacoub El Mansour,Ittihad Zemmouri Khemisset
+10,OD,USMO,Olympic Dcheira,Union Sportive Musulmane dOujda
+10,JSM,CJBG,Jeunesse Sportive Massira,Club Jeunesse Ben Guerir
+10,MCO,OCS,Mouloudia Club d'Oujda,Olympique Club de Safi
+10,JSS,SCCM,Jeunesse Sportive Salmi,Sporting Club Chabab Mohammedia
+11,CAK,USB,Chabab Atlas Khénifra,Union Sportive Boujaad
+11,IZK,OD,Ittihad Zemmouri Khemisset,Olympic Dcheira
+11,OCK,JSM,Olympique Club Khouribga,Jeunesse Sportive Massira
+11,SM,KAC,Stade Marocain,Kénitra Athletic Club
+11,OCS,JSS,Olympique Club de Safi,Jeunesse Sportive Salmi
+11,SCCM,WAF,Sporting Club Chabab Mohammedia,Wydad Athletic Fassi
+11,MCO,USYM,Mouloudia Club d'Oujda,Union Sportive Yacoub El Mansour
+11,CJBG,USMO,Club Jeunesse Ben Guerir,Union Sportive Musulmane dOujda
+12,WAF,SM,Wydad Athletic Fassi,Stade Marocain
+12,KAC,SCCM,Kénitra Athletic Club,Sporting Club Chabab Mohammedia
+12,USB,OCK,Union Sportive Boujaad,Olympique Club Khouribga
+12,USYM,CAK,Union Sportive Yacoub El Mansour,Chabab Atlas Khénifra
+12,OD,CJBG,Olympic Dcheira,Club Jeunesse Ben Guerir
+12,JSM,OCS,Jeunesse Sportive Massira,Olympique Club de Safi
+12,USMO,IZK,Union Sportive Musulmane dOujda,Ittihad Zemmouri Khemisset
+12,JSS,MCO,Jeunesse Sportive Salmi,Mouloudia Club d'Oujda
+13,CAK,JSM,Chabab Atlas Khénifra,Jeunesse Sportive Massira
+13,IZK,CJBG,Ittihad Zemmouri Khemisset,Club Jeunesse Ben Guerir
+13,OCK,USYM,Olympique Club Khouribga,Union Sportive Yacoub El Mansour
+13,SM,USMO,Stade Marocain,Union Sportive Musulmane dOujda
+13,OCS,OD,Olympique Club de Safi,Olympic Dcheira
+13,SCCM,USB,Sporting Club Chabab Mohammedia,Union Sportive Boujaad
+13,MCO,KAC,Mouloudia Club d'Oujda,Kénitra Athletic Club
+13,JSS,WAF,Jeunesse Sportive Salmi,Wydad Athletic Fassi
+14,WAF,IZK,Wydad Athletic Fassi,Ittihad Zemmouri Khemisset
+14,KAC,JSS,Kénitra Athletic Club,Jeunesse Sportive Salmi
+14,USB,MCO,Union Sportive Boujaad,Mouloudia Club d'Oujda
+14,USYM,OCS,Union Sportive Yacoub El Mansour,Olympique Club de Safi
+14,OD,SM,Olympic Dcheira,Stade Marocain
+14,JSM,SCCM,Jeunesse Sportive Massira,Sporting Club Chabab Mohammedia
+14,USMO,CAK,Union Sportive Musulmane dOujda,Chabab Atlas Khénifra
+14,CJBG,OCK,Club Jeunesse Ben Guerir,Olympique Club Khouribga
+15,CAK,CJBG,Chabab Atlas Khénifra,Club Jeunesse Ben Guerir
+15,IZK,JSM,Ittihad Zemmouri Khemisset,Jeunesse Sportive Massira
+15,OCK,USMO,Olympique Club Khouribga,Union Sportive Musulmane dOujda
+15,SM,USYM,Stade Marocain,Union Sportive Yacoub El Mansour
+15,OCS,KAC,Olympique Club de Safi,Kénitra Athletic Club
+15,SCCM,OD,Sporting Club Chabab Mohammedia,Olympic Dcheira
+15,MCO,WAF,Mouloudia Club d'Oujda,Wydad Athletic Fassi
+15,JSS,USB,Jeunesse Sportive Salmi,Union Sportive Boujaad
+16,IZK,CAK,Ittihad Zemmouri Khemisset,Chabab Atlas Khénifra
+16,WAF,KAC,Wydad Athletic Fassi,Kénitra Athletic Club
+16,OCS,USB,Olympique Club de Safi,Union Sportive Boujaad
+16,SCCM,USYM,Sporting Club Chabab Mohammedia,Union Sportive Yacoub El Mansour
+16,OCK,OD,Olympique Club Khouribga,Olympic Dcheira
+16,SM,JSM,Stade Marocain,Jeunesse Sportive Massira
+16,MCO,USMO,Mouloudia Club d'Oujda,Union Sportive Musulmane dOujda
+16,JSS,CJBG,Jeunesse Sportive Salmi,Club Jeunesse Ben Guerir
+17,USB,WAF,Union Sportive Boujaad,Wydad Athletic Fassi
+17,USYM,KAC,Union Sportive Yacoub El Mansour,Kénitra Athletic Club
+17,CAK,OCK,Chabab Atlas Khénifra,Olympique Club Khouribga
+17,IZK,SM,Ittihad Zemmouri Khemisset,Stade Marocain
+17,CJBG,OCS,Club Jeunesse Ben Guerir,Olympique Club de Safi
+17,USMO,SCCM,Union Sportive Musulmane dOujda,Sporting Club Chabab Mohammedia
+17,OD,MCO,Olympic Dcheira,Mouloudia Club d'Oujda
+17,JSM,JSS,Jeunesse Sportive Massira,Jeunesse Sportive Salmi
+18,SCCM,CAK,Sporting Club Chabab Mohammedia,Chabab Atlas Khénifra
+18,OCK,IZK,Olympique Club Khouribga,Ittihad Zemmouri Khemisset
+18,KAC,USB,Kénitra Athletic Club,Union Sportive Boujaad
+18,JSS,USYM,Jeunesse Sportive Salmi,Union Sportive Yacoub El Mansour
+18,WAF,OD,Wydad Athletic Fassi,Olympic Dcheira
+18,MCO,JSM,Mouloudia Club d'Oujda,Jeunesse Sportive Massira
+18,OCS,USMO,Olympique Club de Safi,Union Sportive Musulmane dOujda
+18,SM,CJBG,Stade Marocain,Club Jeunesse Ben Guerir
+19,USMO,WAF,Union Sportive Musulmane dOujda,Wydad Athletic Fassi
+19,JSM,KAC,Jeunesse Sportive Massira,Kénitra Athletic Club
+19,USYM,USB,Union Sportive Yacoub El Mansour,Union Sportive Boujaad
+19,CAK,SM,Chabab Atlas Khénifra,Stade Marocain
+19,IZK,OCS,Ittihad Zemmouri Khemisset,Olympique Club de Safi
+19,OCK,SCCM,Olympique Club Khouribga,Sporting Club Chabab Mohammedia
+19,CJBG,MCO,Club Jeunesse Ben Guerir,Mouloudia Club d'Oujda
+19,OD,JSS,Olympic Dcheira,Jeunesse Sportive Salmi
+20,OCS,CAK,Olympique Club de Safi,Chabab Atlas Khénifra
+20,MCO,IZK,Mouloudia Club d'Oujda,Ittihad Zemmouri Khemisset
+20,SM,OCK,Stade Marocain,Olympique Club Khouribga
+20,WAF,USYM,Wydad Athletic Fassi,Union Sportive Yacoub El Mansour
+20,KAC,OD,Kénitra Athletic Club,Olympic Dcheira
+20,USB,JSM,Union Sportive Boujaad,Jeunesse Sportive Massira
+20,JSS,USMO,Jeunesse Sportive Salmi,Union Sportive Musulmane dOujda
+20,SCCM,CJBG,Sporting Club Chabab Mohammedia,Club Jeunesse Ben Guerir
+21,CJBG,WAF,Club Jeunesse Ben Guerir,Wydad Athletic Fassi
+21,USMO,KAC,Union Sportive Musulmane dOujda,Kénitra Athletic Club
+21,OD,USB,Olympic Dcheira,Union Sportive Boujaad
+21,JSM,USYM,Jeunesse Sportive Massira,Union Sportive Yacoub El Mansour
+21,OCK,OCS,Olympique Club Khouribga,Olympique Club de Safi
+21,SM,SCCM,Stade Marocain,Sporting Club Chabab Mohammedia
+21,CAK,MCO,Chabab Atlas Khénifra,Mouloudia Club d'Oujda
+21,IZK,JSS,Ittihad Zemmouri Khemisset,Jeunesse Sportive Salmi
+22,JSS,CAK,Jeunesse Sportive Salmi,Chabab Atlas Khénifra
+22,SCCM,IZK,Sporting Club Chabab Mohammedia,Ittihad Zemmouri Khemisset
+22,MCO,OCK,Mouloudia Club d'Oujda,Olympique Club Khouribga
+22,OCS,SM,Olympique Club de Safi,Stade Marocain
+22,USYM,OD,Union Sportive Yacoub El Mansour,Olympic Dcheira
+22,WAF,JSM,Wydad Athletic Fassi,Jeunesse Sportive Massira
+22,USB,USMO,Union Sportive Boujaad,Union Sportive Musulmane dOujda
+22,KAC,CJBG,Kénitra Athletic Club,Club Jeunesse Ben Guerir
+23,CAK,WAF,Chabab Atlas Khénifra,Wydad Athletic Fassi
+23,IZK,KAC,Ittihad Zemmouri Khemisset,Kénitra Athletic Club
+23,CJBG,USB,Club Jeunesse Ben Guerir,Union Sportive Boujaad
+23,USMO,USYM,Union Sportive Musulmane dOujda,Union Sportive Yacoub El Mansour
+23,JSM,OD,Jeunesse Sportive Massira,Olympic Dcheira
+23,OCS,SCCM,Olympique Club de Safi,Sporting Club Chabab Mohammedia
+23,SM,MCO,Stade Marocain,Mouloudia Club d'Oujda
+23,OCK,JSS,Olympique Club Khouribga,Jeunesse Sportive Salmi
+24,OD,CAK,Olympic Dcheira,Chabab Atlas Khénifra
+24,USB,IZK,Union Sportive Boujaad,Ittihad Zemmouri Khemisset
+24,KAC,OCK,Kénitra Athletic Club,Olympique Club Khouribga
+24,JSS,SM,Jeunesse Sportive Salmi,Stade Marocain
+24,WAF,OCS,Wydad Athletic Fassi,Olympique Club de Safi
+24,MCO,SCCM,Mouloudia Club d'Oujda,Sporting Club Chabab Mohammedia
+24,JSM,USMO,Jeunesse Sportive Massira,Union Sportive Musulmane dOujda
+24,USYM,CJBG,Union Sportive Yacoub El Mansour,Club Jeunesse Ben Guerir
+25,OCK,WAF,Olympique Club Khouribga,Wydad Athletic Fassi
+25,CAK,KAC,Chabab Atlas Khénifra,Kénitra Athletic Club
+25,SM,USB,Stade Marocain,Union Sportive Boujaad
+25,IZK,USYM,Ittihad Zemmouri Khemisset,Union Sportive Yacoub El Mansour
+25,USMO,OD,Union Sportive Musulmane dOujda,Olympic Dcheira
+25,CJBG,JSM,Club Jeunesse Ben Guerir,Jeunesse Sportive Massira
+25,OCS,MCO,Olympique Club de Safi,Mouloudia Club d'Oujda
+25,SCCM,JSS,Sporting Club Chabab Mohammedia,Jeunesse Sportive Salmi
+26,USB,CAK,Union Sportive Boujaad,Chabab Atlas Khénifra
+26,OD,IZK,Olympic Dcheira,Ittihad Zemmouri Khemisset
+26,JSM,OCK,Jeunesse Sportive Massira,Olympique Club Khouribga
+26,KAC,SM,Kénitra Athletic Club,Stade Marocain
+26,JSS,OCS,Jeunesse Sportive Salmi,Olympique Club de Safi
+26,WAF,SCCM,Wydad Athletic Fassi,Sporting Club Chabab Mohammedia
+26,USYM,MCO,Union Sportive Yacoub El Mansour,Mouloudia Club d'Oujda
+26,USMO,CJBG,Union Sportive Musulmane dOujda,Club Jeunesse Ben Guerir
+27,SM,WAF,Stade Marocain,Wydad Athletic Fassi
+27,SCCM,KAC,Sporting Club Chabab Mohammedia,Kénitra Athletic Club
+27,OCK,USB,Olympique Club Khouribga,Union Sportive Boujaad
+27,CAK,USYM,Chabab Atlas Khénifra,Union Sportive Yacoub El Mansour
+27,CJBG,OD,Club Jeunesse Ben Guerir,Olympic Dcheira
+27,OCS,JSM,Olympique Club de Safi,Jeunesse Sportive Massira
+27,IZK,USMO,Ittihad Zemmouri Khemisset,Union Sportive Musulmane dOujda
+27,MCO,JSS,Mouloudia Club d'Oujda,Jeunesse Sportive Salmi
+28,JSM,CAK,Jeunesse Sportive Massira,Chabab Atlas Khénifra
+28,CJBG,IZK,Club Jeunesse Ben Guerir,Ittihad Zemmouri Khemisset
+28,USYM,OCK,Union Sportive Yacoub El Mansour,Olympique Club Khouribga
+28,USMO,SM,Union Sportive Musulmane dOujda,Stade Marocain
+28,OD,OCS,Olympic Dcheira,Olympique Club de Safi
+28,USB,SCCM,Union Sportive Boujaad,Sporting Club Chabab Mohammedia
+28,KAC,MCO,Kénitra Athletic Club,Mouloudia Club d'Oujda
+28,WAF,JSS,Wydad Athletic Fassi,Jeunesse Sportive Salmi
+29,IZK,WAF,Ittihad Zemmouri Khemisset,Wydad Athletic Fassi
+29,JSS,KAC,Jeunesse Sportive Salmi,Kénitra Athletic Club
+29,MCO,USB,Mouloudia Club d'Oujda,Union Sportive Boujaad
+29,OCS,USYM,Olympique Club de Safi,Union Sportive Yacoub El Mansour
+29,SM,OD,Stade Marocain,Olympic Dcheira
+29,SCCM,JSM,Sporting Club Chabab Mohammedia,Jeunesse Sportive Massira
+29,CAK,USMO,Chabab Atlas Khénifra,Union Sportive Musulmane dOujda
+29,OCK,CJBG,Olympique Club Khouribga,Club Jeunesse Ben Guerir
+30,CJBG,CAK,Club Jeunesse Ben Guerir,Chabab Atlas Khénifra
+30,JSM,IZK,Jeunesse Sportive Massira,Ittihad Zemmouri Khemisset
+30,USMO,OCK,Union Sportive Musulmane dOujda,Olympique Club Khouribga
+30,USYM,SM,Union Sportive Yacoub El Mansour,Stade Marocain
+30,KAC,OCS,Kénitra Athletic Club,Olympique Club de Safi
+30,OD,SCCM,Olympic Dcheira,Sporting Club Chabab Mohammedia
+30,WAF,MCO,Wydad Athletic Fassi,Mouloudia Club d'Oujda
+30,USB,JSS,Union Sportive Boujaad,Jeunesse Sportive Salmi

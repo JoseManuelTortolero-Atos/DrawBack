@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: rule-scope-assignment-params
+      author: calendar
+      comment: Asignación de restricciones por ámbito (federación, liga-temporada, grupo de coordinación, partido) con sus parámetros
+      changes:
+        - addColumn:
+            tableName: rule_scope_assignment
+            columns:
+              - column: {name: team_a, type: VARCHAR(12)}
+              - column: {name: team_b, type: VARCHAR(12)}
+              - column: {name: team, type: VARCHAR(12)}
+              - column: {name: teams, type: VARCHAR(2000)}
+              - column: {name: rounds, type: VARCHAR(1000)}
+              - column: {name: min_rounds, type: INT}
+              - column: {name: int_param, type: INT}
+              - column: {name: date_from, type: DATE}
+              - column: {name: date_to, type: DATE}
+              - column: {name: fixed_date, type: DATE}
+              - column: {name: note, type: VARCHAR(1000)}
+              - column: {name: enabled, type: BOOLEAN, defaultValueBoolean: true, constraints: {nullable: false}}
+              - column: {name: exception_of, type: VARCHAR(36)}
+              - column: {name: created_at, type: TIMESTAMP, defaultValueComputed: CURRENT_TIMESTAMP, constraints: {nullable: false}}
+              - column: {name: updated_at, type: TIMESTAMP}
+        - createIndex: {tableName: rule_scope_assignment, indexName: ix_rule_scope_exception, columns: [{column: {name: exception_of}}]}

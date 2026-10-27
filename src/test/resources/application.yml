@@ -1,0 +1,21 @@
+# Fixtures explicitos de integracion; DB_URL debe apuntar a una BD desechable.
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME:calendar}
+    password: ${DB_PASSWORD:calendar}
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-integration.yaml
+    contexts: legacy-fixtures
+    drop-first: true
+
+calendar:
+  demo:
+    enabled: false
+  planning:
+    timeout: PT2M
+    threads: 1
+  storage:
+    base-dir: ./target/test-data/dataFiles
+  results:
+    base-dir: ./target/test-data/results

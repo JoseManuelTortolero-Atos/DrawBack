@@ -1,0 +1,134 @@
+sep=,
+Round,Home,Away,Home Name, Away Name
+1,ANAFF,CRAH,Association Nacer Athletique de Football Feminin,Club Raja Ain Harrouda
+1,AGS,RCAZ,Association Generation Solidarite,Renaissance Club Athletic Zemamra
+1,ALAMFF,CDSM,Association Lionnes Assa-Mahbes de Football Feminin,Club Difaa Sportif Marrakech
+1,GINGA,ASSCHT,GINGA Sport,Association Sportive Chabab Tarrast
+1,ITFF,SCCM,Itehad Tanger de Football Feminin,Sporting Club Chabab Mohammedia
+1,USYM,RCA,Union Sportive Yacoub El Mansour,Raja Club Athletic
+2,RCAZ,CRAH,Renaissance Club Athletic Zemamra,Club Raja Ain Harrouda
+2,AGS,ALAMFF,Association Generation Solidarite,Association Lionnes Assa-Mahbes de Football Feminin
+2,RCA,ANAFF,Raja Club Athletic,Association Nacer Athletique de Football Feminin
+2,CDSM,ITFF,Club Difaa Sportif Marrakech,Itehad Tanger de Football Feminin
+2,ASSCHT,USYM,Association Sportive Chabab Tarrast,Union Sportive Yacoub El Mansour
+2,SCCM,GINGA,Sporting Club Chabab Mohammedia,GINGA Sport
+3,ANAFF,CDSM,Association Nacer Athletique de Football Feminin,Club Difaa Sportif Marrakech
+3,CRAH,RCA,Club Raja Ain Harrouda,Raja Club Athletic
+3,ALAMFF,RCAZ,Association Lionnes Assa-Mahbes de Football Feminin,Renaissance Club Athletic Zemamra
+3,GINGA,AGS,GINGA Sport,Association Generation Solidarite
+3,ITFF,ASSCHT,Itehad Tanger de Football Feminin,Association Sportive Chabab Tarrast
+3,USYM,SCCM,Union Sportive Yacoub El Mansour,Sporting Club Chabab Mohammedia
+4,RCAZ,GINGA,Renaissance Club Athletic Zemamra,GINGA Sport
+4,AGS,USYM,Association Generation Solidarite,Union Sportive Yacoub El Mansour
+4,ALAMFF,ITFF,Association Lionnes Assa-Mahbes de Football Feminin,Itehad Tanger de Football Feminin
+4,CDSM,CRAH,Club Difaa Sportif Marrakech,Club Raja Ain Harrouda
+4,ASSCHT,RCA,Association Sportive Chabab Tarrast,Raja Club Athletic
+4,SCCM,ANAFF,Sporting Club Chabab Mohammedia,Association Nacer Athletique de Football Feminin
+5,ANAFF,ASSCHT,Association Nacer Athletique de Football Feminin,Association Sportive Chabab Tarrast
+5,CRAH,SCCM,Club Raja Ain Harrouda,Sporting Club Chabab Mohammedia
+5,RCA,CDSM,Raja Club Athletic,Club Difaa Sportif Marrakech
+5,GINGA,ALAMFF,GINGA Sport,Association Lionnes Assa-Mahbes de Football Feminin
+5,ITFF,AGS,Itehad Tanger de Football Feminin,Association Generation Solidarite
+5,USYM,RCAZ,Union Sportive Yacoub El Mansour,Renaissance Club Athletic Zemamra
+6,RCAZ,RCA,Renaissance Club Athletic Zemamra,Raja Club Athletic
+6,AGS,ANAFF,Association Generation Solidarite,Association Nacer Athletique de Football Feminin
+6,ALAMFF,USYM,Association Lionnes Assa-Mahbes de Football Feminin,Union Sportive Yacoub El Mansour
+6,GINGA,ITFF,GINGA Sport,Itehad Tanger de Football Feminin
+6,ASSCHT,CRAH,Association Sportive Chabab Tarrast,Club Raja Ain Harrouda
+6,SCCM,CDSM,Sporting Club Chabab Mohammedia,Club Difaa Sportif Marrakech
+7,ANAFF,ALAMFF,Association Nacer Athletique de Football Feminin,Association Lionnes Assa-Mahbes de Football Feminin
+7,CRAH,AGS,Club Raja Ain Harrouda,Association Generation Solidarite
+7,RCA,SCCM,Raja Club Athletic,Sporting Club Chabab Mohammedia
+7,CDSM,ASSCHT,Club Difaa Sportif Marrakech,Association Sportive Chabab Tarrast
+7,ITFF,RCAZ,Itehad Tanger de Football Feminin,Renaissance Club Athletic Zemamra
+7,USYM,GINGA,Union Sportive Yacoub El Mansour,GINGA Sport
+8,RCAZ,ANAFF,Renaissance Club Athletic Zemamra,Association Nacer Athletique de Football Feminin
+8,AGS,CDSM,Association Generation Solidarite,Club Difaa Sportif Marrakech
+8,ALAMFF,RCA,Association Lionnes Assa-Mahbes de Football Feminin,Raja Club Athletic
+8,GINGA,CRAH,GINGA Sport,Club Raja Ain Harrouda
+8,ITFF,USYM,Itehad Tanger de Football Feminin,Union Sportive Yacoub El Mansour
+8,SCCM,ASSCHT,Sporting Club Chabab Mohammedia,Association Sportive Chabab Tarrast
+9,ANAFF,GINGA,Association Nacer Athletique de Football Feminin,GINGA Sport
+9,CRAH,ITFF,Club Raja Ain Harrouda,Itehad Tanger de Football Feminin
+9,RCA,AGS,Raja Club Athletic,Association Generation Solidarite
+9,CDSM,USYM,Club Difaa Sportif Marrakech,Union Sportive Yacoub El Mansour
+9,ASSCHT,RCAZ,Association Sportive Chabab Tarrast,Renaissance Club Athletic Zemamra
+9,SCCM,ALAMFF,Sporting Club Chabab Mohammedia,Association Lionnes Assa-Mahbes de Football Feminin
+10,RCAZ,CDSM,Renaissance Club Athletic Zemamra,Club Difaa Sportif Marrakech
+10,AGS,SCCM,Association Generation Solidarite,Sporting Club Chabab Mohammedia
+10,ALAMFF,ASSCHT,Association Lionnes Assa-Mahbes de Football Feminin,Association Sportive Chabab Tarrast
+10,GINGA,RCA,GINGA Sport,Raja Club Athletic
+10,ITFF,ANAFF,Itehad Tanger de Football Feminin,Association Nacer Athletique de Football Feminin
+10,USYM,CRAH,Union Sportive Yacoub El Mansour,Club Raja Ain Harrouda
+11,ANAFF,USYM,Association Nacer Athletique de Football Feminin,Union Sportive Yacoub El Mansour
+11,CRAH,ALAMFF,Club Raja Ain Harrouda,Association Lionnes Assa-Mahbes de Football Feminin
+11,RCA,ITFF,Raja Club Athletic,Itehad Tanger de Football Feminin
+11,CDSM,GINGA,Club Difaa Sportif Marrakech,GINGA Sport
+11,ASSCHT,AGS,Association Sportive Chabab Tarrast,Association Generation Solidarite
+11,SCCM,RCAZ,Sporting Club Chabab Mohammedia,Renaissance Club Athletic Zemamra
+12,CRAH,ANAFF,Club Raja Ain Harrouda,Association Nacer Athletique de Football Feminin
+12,RCAZ,AGS,Renaissance Club Athletic Zemamra,Association Generation Solidarite
+12,CDSM,ALAMFF,Club Difaa Sportif Marrakech,Association Lionnes Assa-Mahbes de Football Feminin
+12,ASSCHT,GINGA,Association Sportive Chabab Tarrast,GINGA Sport
+12,SCCM,ITFF,Sporting Club Chabab Mohammedia,Itehad Tanger de Football Feminin
+12,RCA,USYM,Raja Club Athletic,Union Sportive Yacoub El Mansour
+13,CRAH,RCAZ,Club Raja Ain Harrouda,Renaissance Club Athletic Zemamra
+13,ALAMFF,AGS,Association Lionnes Assa-Mahbes de Football Feminin,Association Generation Solidarite
+13,ANAFF,RCA,Association Nacer Athletique de Football Feminin,Raja Club Athletic
+13,ITFF,CDSM,Itehad Tanger de Football Feminin,Club Difaa Sportif Marrakech
+13,USYM,ASSCHT,Union Sportive Yacoub El Mansour,Association Sportive Chabab Tarrast
+13,GINGA,SCCM,GINGA Sport,Sporting Club Chabab Mohammedia
+14,CDSM,ANAFF,Club Difaa Sportif Marrakech,Association Nacer Athletique de Football Feminin
+14,RCA,CRAH,Raja Club Athletic,Club Raja Ain Harrouda
+14,RCAZ,ALAMFF,Renaissance Club Athletic Zemamra,Association Lionnes Assa-Mahbes de Football Feminin
+14,AGS,GINGA,Association Generation Solidarite,GINGA Sport
+14,ASSCHT,ITFF,Association Sportive Chabab Tarrast,Itehad Tanger de Football Feminin
+14,SCCM,USYM,Sporting Club Chabab Mohammedia,Union Sportive Yacoub El Mansour
+15,GINGA,RCAZ,GINGA Sport,Renaissance Club Athletic Zemamra
+15,USYM,AGS,Union Sportive Yacoub El Mansour,Association Generation Solidarite
+15,ITFF,ALAMFF,Itehad Tanger de Football Feminin,Association Lionnes Assa-Mahbes de Football Feminin
+15,CRAH,CDSM,Club Raja Ain Harrouda,Club Difaa Sportif Marrakech
+15,RCA,ASSCHT,Raja Club Athletic,Association Sportive Chabab Tarrast
+15,ANAFF,SCCM,Association Nacer Athletique de Football Feminin,Sporting Club Chabab Mohammedia
+16,ASSCHT,ANAFF,Association Sportive Chabab Tarrast,Association Nacer Athletique de Football Feminin
+16,SCCM,CRAH,Sporting Club Chabab Mohammedia,Club Raja Ain Harrouda
+16,CDSM,RCA,Club Difaa Sportif Marrakech,Raja Club Athletic
+16,ALAMFF,GINGA,Association Lionnes Assa-Mahbes de Football Feminin,GINGA Sport
+16,AGS,ITFF,Association Generation Solidarite,Itehad Tanger de Football Feminin
+16,RCAZ,USYM,Renaissance Club Athletic Zemamra,Union Sportive Yacoub El Mansour
+17,RCA,RCAZ,Raja Club Athletic,Renaissance Club Athletic Zemamra
+17,ANAFF,AGS,Association Nacer Athletique de Football Feminin,Association Generation Solidarite
+17,USYM,ALAMFF,Union Sportive Yacoub El Mansour,Association Lionnes Assa-Mahbes de Football Feminin
+17,ITFF,GINGA,Itehad Tanger de Football Feminin,GINGA Sport
+17,CRAH,ASSCHT,Club Raja Ain Harrouda,Association Sportive Chabab Tarrast
+17,CDSM,SCCM,Club Difaa Sportif Marrakech,Sporting Club Chabab Mohammedia
+18,ALAMFF,ANAFF,Association Lionnes Assa-Mahbes de Football Feminin,Association Nacer Athletique de Football Feminin
+18,AGS,CRAH,Association Generation Solidarite,Club Raja Ain Harrouda
+18,SCCM,RCA,Sporting Club Chabab Mohammedia,Raja Club Athletic
+18,ASSCHT,CDSM,Association Sportive Chabab Tarrast,Club Difaa Sportif Marrakech
+18,RCAZ,ITFF,Renaissance Club Athletic Zemamra,Itehad Tanger de Football Feminin
+18,GINGA,USYM,GINGA Sport,Union Sportive Yacoub El Mansour
+19,ANAFF,RCAZ,Association Nacer Athletique de Football Feminin,Renaissance Club Athletic Zemamra
+19,CDSM,AGS,Club Difaa Sportif Marrakech,Association Generation Solidarite
+19,RCA,ALAMFF,Raja Club Athletic,Association Lionnes Assa-Mahbes de Football Feminin
+19,CRAH,GINGA,Club Raja Ain Harrouda,GINGA Sport
+19,USYM,ITFF,Union Sportive Yacoub El Mansour,Itehad Tanger de Football Feminin
+19,ASSCHT,SCCM,Association Sportive Chabab Tarrast,Sporting Club Chabab Mohammedia
+20,GINGA,ANAFF,GINGA Sport,Association Nacer Athletique de Football Feminin
+20,ITFF,CRAH,Itehad Tanger de Football Feminin,Club Raja Ain Harrouda
+20,AGS,RCA,Association Generation Solidarite,Raja Club Athletic
+20,USYM,CDSM,Union Sportive Yacoub El Mansour,Club Difaa Sportif Marrakech
+20,RCAZ,ASSCHT,Renaissance Club Athletic Zemamra,Association Sportive Chabab Tarrast
+20,ALAMFF,SCCM,Association Lionnes Assa-Mahbes de Football Feminin,Sporting Club Chabab Mohammedia
+21,CDSM,RCAZ,Club Difaa Sportif Marrakech,Renaissance Club Athletic Zemamra
+21,SCCM,AGS,Sporting Club Chabab Mohammedia,Association Generation Solidarite
+21,ASSCHT,ALAMFF,Association Sportive Chabab Tarrast,Association Lionnes Assa-Mahbes de Football Feminin
+21,RCA,GINGA,Raja Club Athletic,GINGA Sport
+21,ANAFF,ITFF,Association Nacer Athletique de Football Feminin,Itehad Tanger de Football Feminin
+21,CRAH,USYM,Club Raja Ain Harrouda,Union Sportive Yacoub El Mansour
+22,USYM,ANAFF,Union Sportive Yacoub El Mansour,Association Nacer Athletique de Football Feminin
+22,ALAMFF,CRAH,Association Lionnes Assa-Mahbes de Football Feminin,Club Raja Ain Harrouda
+22,ITFF,RCA,Itehad Tanger de Football Feminin,Raja Club Athletic
+22,GINGA,CDSM,GINGA Sport,Club Difaa Sportif Marrakech
+22,AGS,ASSCHT,Association Generation Solidarite,Association Sportive Chabab Tarrast
+22,RCAZ,SCCM,Renaissance Club Athletic Zemamra,Sporting Club Chabab Mohammedia

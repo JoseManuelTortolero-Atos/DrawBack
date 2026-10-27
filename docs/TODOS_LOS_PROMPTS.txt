@@ -1,0 +1,117 @@
+# Calendar Morocco - indice operativo de prompts y estado
+
+Actualizado: 2026-10-19 22:57
+
+## Para que sirve este documento
+
+Este es el punto de entrada operativo para saber que leer, que esta hecho y que
+sigue pendiente. No contiene ni sustituye los prompts canonicos, el contrato,
+el mockup ni la evidencia detallada de pruebas.
+
+La recopilacion completa de documentos recibida el 19/10/2026 a las 22:56 se
+conserva sin modificar en [ARCHIVO_PROMPTS_2026-10-19_2256.txt](ARCHIVO_PROMPTS_2026-10-19_2256.txt).
+Es un archivo historico de 109 documentos fuente concatenados, no una lista de
+tareas ni un prompt ejecutable. Sus instrucciones pueden estar duplicadas,
+sustituidas o en conflicto; no ejecutar prompts desde ese archivo sin validar
+primero su vigencia en el indice canonico.
+
+## Orden de lectura y fuentes de verdad
+
+1. [Decisiones confirmadas](../../prompts/00-contratos/DECISIONES_CONFIRMADAS.md):
+   decisiones de negocio vigentes.
+2. [Jerarquia normativa](../../prompts/00-contratos/JERARQUIA_NORMATIVA.md):
+   precedencia entre decisiones, contrato, mockup, evidencia, codigo y prompts.
+3. [Indice de prompts disponible](../../prompts/PROMPTS_INDEX.md): documentos
+   presentes, material historico y fuentes base ausentes.
+4. [Guia de uso disponible](../../prompts/COMO_USAR_LOS_PROMPTS.md): conservar
+   solo como referencia metodologica; es v0.7 y sus rutas/estados pueden estar
+   desactualizados.
+5. [Estado detallado del proyecto](CONTEXTO_PROYECTO.md): decisiones, alcance,
+   evidencia fechada y limitaciones.
+6. [Estado de entregas](../../prompts/01-auditoria/ESTADO_ENTREGAS.md): resumen
+   por capa y pendientes.
+7. [Continuidad de cuatro chats](INFORME_CONTINUIDAD_4_CHATS_2026-10-19.md):
+   pruebas y decisiones de P1, XLSX y estadisticas P2.
+8. [Auditoria del catalogo P1 CHG-013](INFORME_AUDITORIA_P1_CATALOGO_CHG013.md):
+   evidencia especifica del catalogo; no es una auditoria completa de P1/P2.
+
+## Fuentes canonicas recuperadas
+
+Se recuperaron los prompts base que faltaban y se reconciliaron con las
+decisiones confirmadas, el contexto del backend y el alcance real de las capas.
+La lista y el uso de cada uno están en [PROMPTS_INDEX.md](../../prompts/PROMPTS_INDEX.md).
+El archivo historico permanece sin modificar; no debe reemplazar estas
+versiones reconciliadas ni tomarse como una secuencia ejecutable.
+
+## Reglas que no deben perderse
+
+- P1 genera candidatos de emparejamientos. Elegir uno inicializa la competicion
+  desde cero antes de P2; no es un cambio de sorteo de una competicion en marcha.
+- P2 planifica fechas y horas desde partidos persistidos. Mantener separados
+  los estados y bloqueos de fixture, fecha y hora.
+- No introducir gestion de estadios en el frontend. Preservar en backend y
+  motor las restricciones legacy y sus efectos.
+- Distinguir catalogos de tipos, maestros y configuracion concreta. No inventar
+  derbis, relaciones, fechas ni ambitos.
+- Preservar herencia, excepciones, validacion y concurrencia. La precedencia de
+  duplicados compara solo reglas del mismo tipo y con los mismos parametros.
+- Para datos que deban conservarse, usar arranque keep-DB; nunca limpiar la BD
+  como parte de estas tareas.
+- Frontend Angular separado en `../../CalendarGenerateFrontNew`; no introducir
+  Angular en este repositorio backend.
+- El estado de este resumen procede de documentacion fechada. No significa que
+  las pruebas se hayan vuelto a ejecutar hoy.
+
+## Estado comprobable por area
+
+| Area | Implementado | Probado segun evidencia documentada | Pendiente o limite |
+|---|---|---|---|
+| Sorteos P1 | Lotes persistidos, API, seleccion, cancelacion y limpieza de descartados. Generacion por defecto de 1.000; configurable hasta 5.000. | Pruebas dirigidas en PostgreSQL y SQL Server; 1.000 candidatos persistidos y consultados por API en cada motor para el caso de pares P1 entre ligas. | El flujo completo desde navegador contra servidor actualizado sigue pendiente. La eleccion P1 no certifica un reinicio integral de una competicion que ya tenga P2. |
+| XLSX P1 | ZIP conserva CSV y agrega un XLSX por candidato/liga. Usa las cuatro plantillas legacy para los tamanos compatibles y formato tabular para otros casos. | 22 pruebas dirigidas y prueba automatizada de 1.000 candidatos/1.000 libros reabiertos; no usa BD real. | Descargar desde un servidor actualizado y revisar visualmente los libros en Excel o LibreOffice. El ZIP de volumen observado fue de unos 413 MB; revisar limites de proxy/despliegue. |
+| Planificacion P2 | Planificacion incremental con restricciones y compromisos externos; persistencia de resultados y exportacion Excel. | La evidencia mas reciente describe 60 pruebas dirigidas en cada motor, incluyendo ampliacion 5 a 10 jornadas y un Excel de 30 partidos. No equivale a suite completa ni a E2E de navegador. | Aprobar una version no confirma automaticamente sus partidos. Confirmarlos explicitamente antes de ampliar si se deben conservar sus fechas y horas. |
+| Estadisticas P2 | Resumen por equipo, dias y horarios; API y exportacion CSV por version. Se conserva el resumen y los ficheros previos. | 11 pruebas backend y 25 frontend documentadas, incluyendo comparacion con CSV legacy. | Smoke con datos vivos y recorrido de descarga desde navegador pendientes. Calendario y estadisticas se descargan por separado. |
+| Restricciones | Asignacion por ambito, herencia, excepciones y reglas P1 entre ligas; se mantienen separadas de P2. | 75 pruebas dirigidas en PostgreSQL y SQL Server para el alcance de pares P1; seis pruebas frontend del editor y auditorias i18n documentadas. | Probar desde la UI una regla recien creada en un recorrido de usuario completo. No asumir soporte de ligas relacionadas con distinto numero de equipos. |
+| Administracion | CRUD protegido de maestros de equipos, federaciones, competiciones y temporadas; borrado bloqueado ante referencias. | 60 pruebas dirigidas en cada motor documentadas, con borrados protegidos y concurrencia. | No equivale a certificacion completa del producto ni a ejecucion de la suite completa. |
+| CHG-018 | Funcionalidad de P1 y su conexion con el backend implementadas en el alcance descrito por el contexto. | Pruebas automaticas documentadas; consultar secciones P1 anteriores. | Alinear y validar visualmente el mockup; completar E2E navegador. |
+| CHG-019 | No se considera implementado el movimiento manual P2 seguro. | No hay evidencia de validacion completa de conflictos y concurrencia para este flujo. | Disenar/validar mockup y luego implementar movimiento con conflictos, control de concurrencia y preservacion de bloqueos. |
+| CHG-020 | No se consideran implementados los paquetes jerarquicos completos de importacion/exportacion. | No hay evidencia de preview transaccional completa ni rechazo de ambitos incompatibles. | Disenar/validar mockup; implementar upsert no destructivo, preview, validacion de ambito y aplicacion transaccional. |
+| Mockup | Hay contrato y cambios funcionales documentados. | Las pruebas del mockup citadas en documentos corresponden a sus ejecuciones fechadas. | Alinear lo visual para CHG-018/019/020 y ejecutar smoke despues de los cambios. |
+| PostgreSQL / SQL Server | Ambos motores tienen recorridos dirigidos documentados; PostgreSQL es la base principal. | Los resultados de pruebas citados son de suites dirigidas y ambientes de prueba especificos. | Completar E2E y certificacion amplia de ambos motores; no declarar certificacion total por las pruebas dirigidas. |
+
+## Pendientes recomendados, en orden
+
+1. Alinear mockup con el alcance actual de CHG-018/019/020 y ejecutar su smoke.
+2. Implementar y probar CHG-019: movimiento manual de fecha/hora, validacion de
+   conflictos, concurrencia, confirmacion de avisos opcionales y preservacion
+   de partidos protegidos.
+3. Implementar y probar CHG-020: paquetes por ambito, preview, validacion,
+   upsert no destructivo y aplicacion transaccional.
+4. Resolver por separado la confirmacion automatica de fixtures aprobados al
+   ampliar P2, si se mantiene como requisito.
+5. Ejecutar el recorrido integral de P2 con datos de prueba: generar 1-5,
+   confirmar/bloquear, ampliar a 1-10 y comprobar calendario, estadisticas y
+   descargas acumulativas.
+6. Probar el ZIP P1 desde el servidor actualizado y revisar visualmente los
+   XLSX; comprobar limites de descarga del proxy sin reiniciar ni limpiar una
+   BD que deba conservarse.
+7. Completar E2E navegador y certificacion de la matriz PostgreSQL/SQL Server.
+8. Preparar el ZIP final solo cuando las entregas requeridas y sus pruebas
+   tengan evidencia verificable.
+
+El orden previsto por cambio sigue siendo: prompts al dia -> mockup y validacion
+-> Liquibase/BD si aplica -> backend -> frontend -> QA. La guia
+[COMO_USAR_LOS_PROMPTS.md](../../prompts/COMO_USAR_LOS_PROMPTS.md) es antigua y
+no reemplaza los prompts base ausentes. Antes de cambios en las capas, confirmar
+que se han recuperado y reconciliado las fuentes canonicas.
+
+## Como mantener este indice
+
+- Actualizarlo cuando haya un cambio de estado respaldado por evidencia.
+- Usar las etiquetas **implementado**, **probado**, **pendiente** y **no
+  verificado** con su significado literal; implementado no implica probado.
+- Anotar fecha, alcance, motor/base de datos y comando o evidencia en el
+  documento detallado, sin copiar aqui transcripciones completas.
+- No duplicar prompts canonicos: enlazarlos desde
+  [PROMPTS_INDEX.md](../../prompts/PROMPTS_INDEX.md), y mantener explicitas las
+  fuentes que falten.
+- Mantener los volcados anteriores como archivos fechados e inmutables.

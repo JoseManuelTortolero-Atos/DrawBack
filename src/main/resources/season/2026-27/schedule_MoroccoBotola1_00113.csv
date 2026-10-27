@@ -1,0 +1,242 @@
+sep=,
+Round,Home,Away,Home Name, Away Name
+1,MAS,RCAZ,Maghreb Association Sportive,Renaissance Club Athletic Zemamra
+1,DHJ,CODM,Difaa Hassani El Jadida,Club Omnisport de Meknès
+1,WAC,WST,Wydad Athletic Club,Wydad Sportive de Temara
+1,USAT,IRT,Union Sport Athletic Tiznit,Ittihad Riadi de Tanger
+1,UTS,FUS,Union Touarga Sport,Fath Union Sport
+1,KACM,HUSA,Kawkab Athletic Club Marrakech,Hassania Union Sport d'Agadir
+1,MAT,RSB,Moghreb Athletic Tetouan,Renaissance Sportive de Berkane
+1,FAR,RCA,Association Sportive des Forces Armées Royales,Raja Club Athletic
+2,CODM,KACM,Club Omnisport de Meknès,Kawkab Athletic Club Marrakech
+2,DHJ,WAC,Difaa Hassani El Jadida,Wydad Athletic Club
+2,RCA,RCAZ,Raja Club Athletic,Renaissance Club Athletic Zemamra
+2,HUSA,MAS,Hassania Union Sport d'Agadir,Maghreb Association Sportive
+2,FUS,USAT,Fath Union Sport,Union Sport Athletic Tiznit
+2,RSB,FAR,Renaissance Sportive de Berkane,Association Sportive des Forces Armées Royales
+2,IRT,MAT,Ittihad Riadi de Tanger,Moghreb Athletic Tetouan
+2,WST,UTS,Wydad Sportive de Temara,Union Touarga Sport
+3,MAS,RCA,Maghreb Association Sportive,Raja Club Athletic
+3,RCAZ,HUSA,Renaissance Club Athletic Zemamra,Hassania Union Sport d'Agadir
+3,WAC,CODM,Wydad Athletic Club,Club Omnisport de Meknès
+3,USAT,DHJ,Union Sport Athletic Tiznit,Difaa Hassani El Jadida
+3,UTS,RSB,Union Touarga Sport,Renaissance Sportive de Berkane
+3,KACM,IRT,Kawkab Athletic Club Marrakech,Ittihad Riadi de Tanger
+3,MAT,FUS,Moghreb Athletic Tetouan,Fath Union Sport
+3,FAR,WST,Association Sportive des Forces Armées Royales,Wydad Sportive de Temara
+4,CODM,UTS,Club Omnisport de Meknès,Union Touarga Sport
+4,DHJ,MAT,Difaa Hassani El Jadida,Moghreb Athletic Tetouan
+4,WAC,USAT,Wydad Athletic Club,Union Sport Athletic Tiznit
+4,HUSA,FAR,Hassania Union Sport d'Agadir,Association Sportive des Forces Armées Royales
+4,FUS,RCA,Fath Union Sport,Raja Club Athletic
+4,RSB,RCAZ,Renaissance Sportive de Berkane,Renaissance Club Athletic Zemamra
+4,IRT,MAS,Ittihad Riadi de Tanger,Maghreb Association Sportive
+4,WST,KACM,Wydad Sportive de Temara,Kawkab Athletic Club Marrakech
+5,MAS,RSB,Maghreb Association Sportive,Renaissance Sportive de Berkane
+5,RCAZ,FUS,Renaissance Club Athletic Zemamra,Fath Union Sport
+5,RCA,HUSA,Raja Club Athletic,Hassania Union Sport d'Agadir
+5,USAT,CODM,Union Sport Athletic Tiznit,Club Omnisport de Meknès
+5,UTS,WAC,Union Touarga Sport,Wydad Athletic Club
+5,KACM,DHJ,Kawkab Athletic Club Marrakech,Difaa Hassani El Jadida
+5,MAT,WST,Moghreb Athletic Tetouan,Wydad Sportive de Temara
+5,FAR,IRT,Association Sportive des Forces Armées Royales,Ittihad Riadi de Tanger
+6,CODM,FAR,Club Omnisport de Meknès,Association Sportive des Forces Armées Royales
+6,DHJ,UTS,Difaa Hassani El Jadida,Union Touarga Sport
+6,WAC,MAT,Wydad Athletic Club,Moghreb Athletic Tetouan
+6,USAT,KACM,Union Sport Athletic Tiznit,Kawkab Athletic Club Marrakech
+6,FUS,HUSA,Fath Union Sport,Hassania Union Sport d'Agadir
+6,RSB,RCA,Renaissance Sportive de Berkane,Raja Club Athletic
+6,IRT,RCAZ,Ittihad Riadi de Tanger,Renaissance Club Athletic Zemamra
+6,WST,MAS,Wydad Sportive de Temara,Maghreb Association Sportive
+7,MAS,FUS,Maghreb Association Sportive,Fath Union Sport
+7,RCAZ,WST,Renaissance Club Athletic Zemamra,Wydad Sportive de Temara
+7,RCA,IRT,Raja Club Athletic,Ittihad Riadi de Tanger
+7,HUSA,RSB,Hassania Union Sport d'Agadir,Renaissance Sportive de Berkane
+7,UTS,USAT,Union Touarga Sport,Union Sport Athletic Tiznit
+7,KACM,WAC,Kawkab Athletic Club Marrakech,Wydad Athletic Club
+7,MAT,CODM,Moghreb Athletic Tetouan,Club Omnisport de Meknès
+7,FAR,DHJ,Association Sportive des Forces Armées Royales,Difaa Hassani El Jadida
+8,CODM,RCAZ,Club Omnisport de Meknès,Renaissance Club Athletic Zemamra
+8,DHJ,MAS,Difaa Hassani El Jadida,Maghreb Association Sportive
+8,WAC,FAR,Wydad Athletic Club,Association Sportive des Forces Armées Royales
+8,USAT,MAT,Union Sport Athletic Tiznit,Moghreb Athletic Tetouan
+8,UTS,KACM,Union Touarga Sport,Kawkab Athletic Club Marrakech
+8,RSB,FUS,Renaissance Sportive de Berkane,Fath Union Sport
+8,IRT,HUSA,Ittihad Riadi de Tanger,Hassania Union Sport d'Agadir
+8,WST,RCA,Wydad Sportive de Temara,Raja Club Athletic
+9,MAS,USAT,Maghreb Association Sportive,Union Sport Athletic Tiznit
+9,RCAZ,WAC,Renaissance Club Athletic Zemamra,Wydad Athletic Club
+9,RCA,DHJ,Raja Club Athletic,Difaa Hassani El Jadida
+9,HUSA,WST,Hassania Union Sport d'Agadir,Wydad Sportive de Temara
+9,FUS,IRT,Fath Union Sport,Ittihad Riadi de Tanger
+9,RSB,CODM,Renaissance Sportive de Berkane,Club Omnisport de Meknès
+9,MAT,UTS,Moghreb Athletic Tetouan,Union Touarga Sport
+9,FAR,KACM,Association Sportive des Forces Armées Royales,Kawkab Athletic Club Marrakech
+10,CODM,RCA,Club Omnisport de Meknès,Raja Club Athletic
+10,DHJ,HUSA,Difaa Hassani El Jadida,Hassania Union Sport d'Agadir
+10,WAC,MAS,Wydad Athletic Club,Maghreb Association Sportive
+10,USAT,RCAZ,Union Sport Athletic Tiznit,Renaissance Club Athletic Zemamra
+10,UTS,FAR,Union Touarga Sport,Association Sportive des Forces Armées Royales
+10,KACM,MAT,Kawkab Athletic Club Marrakech,Moghreb Athletic Tetouan
+10,IRT,RSB,Ittihad Riadi de Tanger,Renaissance Sportive de Berkane
+10,WST,FUS,Wydad Sportive de Temara,Fath Union Sport
+11,MAS,MAT,Maghreb Association Sportive,Moghreb Athletic Tetouan
+11,RCAZ,KACM,Renaissance Club Athletic Zemamra,Kawkab Athletic Club Marrakech
+11,RCA,WAC,Raja Club Athletic,Wydad Athletic Club
+11,HUSA,CODM,Hassania Union Sport d'Agadir,Club Omnisport de Meknès
+11,FUS,DHJ,Fath Union Sport,Difaa Hassani El Jadida
+11,RSB,WST,Renaissance Sportive de Berkane,Wydad Sportive de Temara
+11,IRT,UTS,Ittihad Riadi de Tanger,Union Touarga Sport
+11,FAR,USAT,Association Sportive des Forces Armées Royales,Union Sport Athletic Tiznit
+12,CODM,MAS,Club Omnisport de Meknès,Maghreb Association Sportive
+12,DHJ,RSB,Difaa Hassani El Jadida,Renaissance Sportive de Berkane
+12,WAC,HUSA,Wydad Athletic Club,Hassania Union Sport d'Agadir
+12,USAT,RCA,Union Sport Athletic Tiznit,Raja Club Athletic
+12,UTS,RCAZ,Union Touarga Sport,Renaissance Club Athletic Zemamra
+12,KACM,FUS,Kawkab Athletic Club Marrakech,Fath Union Sport
+12,MAT,FAR,Moghreb Athletic Tetouan,Association Sportive des Forces Armées Royales
+12,WST,IRT,Wydad Sportive de Temara,Ittihad Riadi de Tanger
+13,MAS,UTS,Maghreb Association Sportive,Union Touarga Sport
+13,RCAZ,MAT,Renaissance Club Athletic Zemamra,Moghreb Athletic Tetouan
+13,RCA,KACM,Raja Club Athletic,Kawkab Athletic Club Marrakech
+13,HUSA,USAT,Hassania Union Sport d'Agadir,Union Sport Athletic Tiznit
+13,FUS,FAR,Fath Union Sport,Association Sportive des Forces Armées Royales
+13,RSB,WAC,Renaissance Sportive de Berkane,Wydad Athletic Club
+13,IRT,CODM,Ittihad Riadi de Tanger,Club Omnisport de Meknès
+13,WST,DHJ,Wydad Sportive de Temara,Difaa Hassani El Jadida
+14,CODM,FUS,Club Omnisport de Meknès,Fath Union Sport
+14,DHJ,RCAZ,Difaa Hassani El Jadida,Renaissance Club Athletic Zemamra
+14,WAC,IRT,Wydad Athletic Club,Ittihad Riadi de Tanger
+14,USAT,WST,Union Sport Athletic Tiznit,Wydad Sportive de Temara
+14,UTS,RCA,Union Touarga Sport,Raja Club Athletic
+14,KACM,RSB,Kawkab Athletic Club Marrakech,Renaissance Sportive de Berkane
+14,MAT,HUSA,Moghreb Athletic Tetouan,Hassania Union Sport d'Agadir
+14,FAR,MAS,Association Sportive des Forces Armées Royales,Maghreb Association Sportive
+15,MAS,KACM,Maghreb Association Sportive,Kawkab Athletic Club Marrakech
+15,RCAZ,FAR,Renaissance Club Athletic Zemamra,Association Sportive des Forces Armées Royales
+15,RCA,MAT,Raja Club Athletic,Moghreb Athletic Tetouan
+15,HUSA,UTS,Hassania Union Sport d'Agadir,Union Touarga Sport
+15,FUS,WAC,Fath Union Sport,Wydad Athletic Club
+15,RSB,USAT,Renaissance Sportive de Berkane,Union Sport Athletic Tiznit
+15,IRT,DHJ,Ittihad Riadi de Tanger,Difaa Hassani El Jadida
+15,WST,CODM,Wydad Sportive de Temara,Club Omnisport de Meknès
+16,RCAZ,MAS,Renaissance Club Athletic Zemamra,Maghreb Association Sportive
+16,CODM,DHJ,Club Omnisport de Meknès,Difaa Hassani El Jadida
+16,WST,WAC,Wydad Sportive de Temara,Wydad Athletic Club
+16,IRT,USAT,Ittihad Riadi de Tanger,Union Sport Athletic Tiznit
+16,FUS,UTS,Fath Union Sport,Union Touarga Sport
+16,HUSA,KACM,Hassania Union Sport d'Agadir,Kawkab Athletic Club Marrakech
+16,RSB,MAT,Renaissance Sportive de Berkane,Moghreb Athletic Tetouan
+16,RCA,FAR,Raja Club Athletic,Association Sportive des Forces Armées Royales
+17,KACM,CODM,Kawkab Athletic Club Marrakech,Club Omnisport de Meknès
+17,WAC,DHJ,Wydad Athletic Club,Difaa Hassani El Jadida
+17,RCAZ,RCA,Renaissance Club Athletic Zemamra,Raja Club Athletic
+17,MAS,HUSA,Maghreb Association Sportive,Hassania Union Sport d'Agadir
+17,USAT,FUS,Union Sport Athletic Tiznit,Fath Union Sport
+17,FAR,RSB,Association Sportive des Forces Armées Royales,Renaissance Sportive de Berkane
+17,MAT,IRT,Moghreb Athletic Tetouan,Ittihad Riadi de Tanger
+17,UTS,WST,Union Touarga Sport,Wydad Sportive de Temara
+18,RCA,MAS,Raja Club Athletic,Maghreb Association Sportive
+18,HUSA,RCAZ,Hassania Union Sport d'Agadir,Renaissance Club Athletic Zemamra
+18,CODM,WAC,Club Omnisport de Meknès,Wydad Athletic Club
+18,DHJ,USAT,Difaa Hassani El Jadida,Union Sport Athletic Tiznit
+18,RSB,UTS,Renaissance Sportive de Berkane,Union Touarga Sport
+18,IRT,KACM,Ittihad Riadi de Tanger,Kawkab Athletic Club Marrakech
+18,FUS,MAT,Fath Union Sport,Moghreb Athletic Tetouan
+18,WST,FAR,Wydad Sportive de Temara,Association Sportive des Forces Armées Royales
+19,UTS,CODM,Union Touarga Sport,Club Omnisport de Meknès
+19,MAT,DHJ,Moghreb Athletic Tetouan,Difaa Hassani El Jadida
+19,USAT,WAC,Union Sport Athletic Tiznit,Wydad Athletic Club
+19,FAR,HUSA,Association Sportive des Forces Armées Royales,Hassania Union Sport d'Agadir
+19,RCA,FUS,Raja Club Athletic,Fath Union Sport
+19,RCAZ,RSB,Renaissance Club Athletic Zemamra,Renaissance Sportive de Berkane
+19,MAS,IRT,Maghreb Association Sportive,Ittihad Riadi de Tanger
+19,KACM,WST,Kawkab Athletic Club Marrakech,Wydad Sportive de Temara
+20,RSB,MAS,Renaissance Sportive de Berkane,Maghreb Association Sportive
+20,FUS,RCAZ,Fath Union Sport,Renaissance Club Athletic Zemamra
+20,HUSA,RCA,Hassania Union Sport d'Agadir,Raja Club Athletic
+20,CODM,USAT,Club Omnisport de Meknès,Union Sport Athletic Tiznit
+20,WAC,UTS,Wydad Athletic Club,Union Touarga Sport
+20,DHJ,KACM,Difaa Hassani El Jadida,Kawkab Athletic Club Marrakech
+20,WST,MAT,Wydad Sportive de Temara,Moghreb Athletic Tetouan
+20,IRT,FAR,Ittihad Riadi de Tanger,Association Sportive des Forces Armées Royales
+21,FAR,CODM,Association Sportive des Forces Armées Royales,Club Omnisport de Meknès
+21,UTS,DHJ,Union Touarga Sport,Difaa Hassani El Jadida
+21,MAT,WAC,Moghreb Athletic Tetouan,Wydad Athletic Club
+21,KACM,USAT,Kawkab Athletic Club Marrakech,Union Sport Athletic Tiznit
+21,HUSA,FUS,Hassania Union Sport d'Agadir,Fath Union Sport
+21,RCA,RSB,Raja Club Athletic,Renaissance Sportive de Berkane
+21,RCAZ,IRT,Renaissance Club Athletic Zemamra,Ittihad Riadi de Tanger
+21,MAS,WST,Maghreb Association Sportive,Wydad Sportive de Temara
+22,FUS,MAS,Fath Union Sport,Maghreb Association Sportive
+22,WST,RCAZ,Wydad Sportive de Temara,Renaissance Club Athletic Zemamra
+22,IRT,RCA,Ittihad Riadi de Tanger,Raja Club Athletic
+22,RSB,HUSA,Renaissance Sportive de Berkane,Hassania Union Sport d'Agadir
+22,USAT,UTS,Union Sport Athletic Tiznit,Union Touarga Sport
+22,WAC,KACM,Wydad Athletic Club,Kawkab Athletic Club Marrakech
+22,CODM,MAT,Club Omnisport de Meknès,Moghreb Athletic Tetouan
+22,DHJ,FAR,Difaa Hassani El Jadida,Association Sportive des Forces Armées Royales
+23,RCAZ,CODM,Renaissance Club Athletic Zemamra,Club Omnisport de Meknès
+23,MAS,DHJ,Maghreb Association Sportive,Difaa Hassani El Jadida
+23,FAR,WAC,Association Sportive des Forces Armées Royales,Wydad Athletic Club
+23,MAT,USAT,Moghreb Athletic Tetouan,Union Sport Athletic Tiznit
+23,KACM,UTS,Kawkab Athletic Club Marrakech,Union Touarga Sport
+23,FUS,RSB,Fath Union Sport,Renaissance Sportive de Berkane
+23,HUSA,IRT,Hassania Union Sport d'Agadir,Ittihad Riadi de Tanger
+23,RCA,WST,Raja Club Athletic,Wydad Sportive de Temara
+24,USAT,MAS,Union Sport Athletic Tiznit,Maghreb Association Sportive
+24,WAC,RCAZ,Wydad Athletic Club,Renaissance Club Athletic Zemamra
+24,DHJ,RCA,Difaa Hassani El Jadida,Raja Club Athletic
+24,WST,HUSA,Wydad Sportive de Temara,Hassania Union Sport d'Agadir
+24,IRT,FUS,Ittihad Riadi de Tanger,Fath Union Sport
+24,CODM,RSB,Club Omnisport de Meknès,Renaissance Sportive de Berkane
+24,UTS,MAT,Union Touarga Sport,Moghreb Athletic Tetouan
+24,KACM,FAR,Kawkab Athletic Club Marrakech,Association Sportive des Forces Armées Royales
+25,RCA,CODM,Raja Club Athletic,Club Omnisport de Meknès
+25,HUSA,DHJ,Hassania Union Sport d'Agadir,Difaa Hassani El Jadida
+25,MAS,WAC,Maghreb Association Sportive,Wydad Athletic Club
+25,RCAZ,USAT,Renaissance Club Athletic Zemamra,Union Sport Athletic Tiznit
+25,FAR,UTS,Association Sportive des Forces Armées Royales,Union Touarga Sport
+25,MAT,KACM,Moghreb Athletic Tetouan,Kawkab Athletic Club Marrakech
+25,RSB,IRT,Renaissance Sportive de Berkane,Ittihad Riadi de Tanger
+25,FUS,WST,Fath Union Sport,Wydad Sportive de Temara
+26,MAT,MAS,Moghreb Athletic Tetouan,Maghreb Association Sportive
+26,KACM,RCAZ,Kawkab Athletic Club Marrakech,Renaissance Club Athletic Zemamra
+26,WAC,RCA,Wydad Athletic Club,Raja Club Athletic
+26,CODM,HUSA,Club Omnisport de Meknès,Hassania Union Sport d'Agadir
+26,DHJ,FUS,Difaa Hassani El Jadida,Fath Union Sport
+26,WST,RSB,Wydad Sportive de Temara,Renaissance Sportive de Berkane
+26,UTS,IRT,Union Touarga Sport,Ittihad Riadi de Tanger
+26,USAT,FAR,Union Sport Athletic Tiznit,Association Sportive des Forces Armées Royales
+27,MAS,CODM,Maghreb Association Sportive,Club Omnisport de Meknès
+27,RSB,DHJ,Renaissance Sportive de Berkane,Difaa Hassani El Jadida
+27,HUSA,WAC,Hassania Union Sport d'Agadir,Wydad Athletic Club
+27,RCA,USAT,Raja Club Athletic,Union Sport Athletic Tiznit
+27,RCAZ,UTS,Renaissance Club Athletic Zemamra,Union Touarga Sport
+27,FUS,KACM,Fath Union Sport,Kawkab Athletic Club Marrakech
+27,FAR,MAT,Association Sportive des Forces Armées Royales,Moghreb Athletic Tetouan
+27,IRT,WST,Ittihad Riadi de Tanger,Wydad Sportive de Temara
+28,UTS,MAS,Union Touarga Sport,Maghreb Association Sportive
+28,MAT,RCAZ,Moghreb Athletic Tetouan,Renaissance Club Athletic Zemamra
+28,KACM,RCA,Kawkab Athletic Club Marrakech,Raja Club Athletic
+28,USAT,HUSA,Union Sport Athletic Tiznit,Hassania Union Sport d'Agadir
+28,FAR,FUS,Association Sportive des Forces Armées Royales,Fath Union Sport
+28,WAC,RSB,Wydad Athletic Club,Renaissance Sportive de Berkane
+28,CODM,IRT,Club Omnisport de Meknès,Ittihad Riadi de Tanger
+28,DHJ,WST,Difaa Hassani El Jadida,Wydad Sportive de Temara
+29,FUS,CODM,Fath Union Sport,Club Omnisport de Meknès
+29,RCAZ,DHJ,Renaissance Club Athletic Zemamra,Difaa Hassani El Jadida
+29,IRT,WAC,Ittihad Riadi de Tanger,Wydad Athletic Club
+29,WST,USAT,Wydad Sportive de Temara,Union Sport Athletic Tiznit
+29,RCA,UTS,Raja Club Athletic,Union Touarga Sport
+29,RSB,KACM,Renaissance Sportive de Berkane,Kawkab Athletic Club Marrakech
+29,HUSA,MAT,Hassania Union Sport d'Agadir,Moghreb Athletic Tetouan
+29,MAS,FAR,Maghreb Association Sportive,Association Sportive des Forces Armées Royales
+30,KACM,MAS,Kawkab Athletic Club Marrakech,Maghreb Association Sportive
+30,FAR,RCAZ,Association Sportive des Forces Armées Royales,Renaissance Club Athletic Zemamra
+30,MAT,RCA,Moghreb Athletic Tetouan,Raja Club Athletic
+30,UTS,HUSA,Union Touarga Sport,Hassania Union Sport d'Agadir
+30,WAC,FUS,Wydad Athletic Club,Fath Union Sport
+30,USAT,RSB,Union Sport Athletic Tiznit,Renaissance Sportive de Berkane
+30,DHJ,IRT,Difaa Hassani El Jadida,Ittihad Riadi de Tanger
+30,CODM,WST,Club Omnisport de Meknès,Wydad Sportive de Temara

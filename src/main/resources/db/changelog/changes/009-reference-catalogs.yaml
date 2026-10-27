@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: chg023-reference-catalogs
+      author: calendar
+      changes:
+        - sqlFile:
+            path: ../data/reference-catalogs.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8

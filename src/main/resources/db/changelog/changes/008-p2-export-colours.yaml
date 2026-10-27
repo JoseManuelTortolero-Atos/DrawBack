@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: p2-season-export-colours
+      author: calendar
+      changes:
+        - createTable:
+            tableName: season_export_colour
+            columns:
+              - column:
+                  name: competition_season_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_season_export_colour
+                    references: competition_season(id)
+                    foreignKeyName: fk_export_colour_season
+                    deleteCascade: true
+              - column:
+                  name: competition_code
+                  type: VARCHAR(32)
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_season_export_colour
+              - column:
+                  name: colour
+                  type: VARCHAR(40)
+                  constraints:
+                    nullable: false

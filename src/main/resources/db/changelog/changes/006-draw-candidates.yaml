@@ -1,0 +1,48 @@
+databaseChangeLog:
+  - changeSet:
+      id: draw-candidates-batch
+      author: calendar
+      comment: Lotes de candidatos de sorteo (emparejamientos) generados desde la configuración en BD
+      changes:
+        - createTable:
+            tableName: draw_batch
+            columns:
+              - column: {name: id, type: VARCHAR(36), constraints: {primaryKey: true, nullable: false}}
+              - column: {name: competition_season_id, type: BIGINT, constraints: {nullable: false, foreignKeyName: fk_draw_batch_cs, references: competition_season(id), deleteCascade: true}}
+              - column: {name: status, type: VARCHAR(16), constraints: {nullable: false}}
+              - column: {name: requested, type: INT, constraints: {nullable: false}}
+              - column: {name: generated_count, type: INT, defaultValueNumeric: 0, constraints: {nullable: false}}
+              - column: {name: tries, type: INT, defaultValueNumeric: 0, constraints: {nullable: false}}
+              - column: {name: params, type: VARCHAR(2000)}
+              - column: {name: message, type: VARCHAR(2000)}
+              - column: {name: chosen_no, type: INT}
+              - column: {name: created_at, type: TIMESTAMP, defaultValueComputed: CURRENT_TIMESTAMP, constraints: {nullable: false}}
+              - column: {name: finished_at, type: TIMESTAMP}
+              - column: {name: chosen_at, type: TIMESTAMP}
+        - createIndex:
+            tableName: draw_batch
+            indexName: ix_draw_batch_cs
+            columns:
+              - column: {name: competition_season_id}
+        - createTable:
+            tableName: draw_batch_league
+            columns:
+              - column: {name: batch_id, type: VARCHAR(36), constraints: {nullable: false, foreignKeyName: fk_draw_league_batch, references: draw_batch(id), deleteCascade: true}}
+              - column: {name: competition_season_id, type: BIGINT, constraints: {nullable: false}}
+              - column: {name: league_order, type: INT, constraints: {nullable: false}}
+              - column: {name: competition_id, type: VARCHAR(40), constraints: {nullable: false}}
+              - column: {name: code, type: VARCHAR(20), constraints: {nullable: false}}
+        - addPrimaryKey: {tableName: draw_batch_league, columnNames: "batch_id,competition_season_id", constraintName: pk_draw_batch_league}
+        - createTable:
+            tableName: draw_candidate_league
+            columns:
+              - column: {name: batch_id, type: VARCHAR(36), constraints: {nullable: false, foreignKeyName: fk_draw_candidate_batch, references: draw_batch(id), deleteCascade: true}}
+              - column: {name: candidate_no, type: INT, constraints: {nullable: false}}
+              - column: {name: competition_season_id, type: BIGINT, constraints: {nullable: false}}
+              - column: {name: pattern, type: VARCHAR(4000), constraints: {nullable: false}}
+              - column: {name: position_teams, type: VARCHAR(2000), constraints: {nullable: false}}
+        - addPrimaryKey: {tableName: draw_candidate_league, columnNames: "batch_id,candidate_no,competition_season_id", constraintName: pk_draw_candidate_league}
+      rollback:
+        - dropTable: {tableName: draw_candidate_league}
+        - dropTable: {tableName: draw_batch_league}
+        - dropTable: {tableName: draw_batch}

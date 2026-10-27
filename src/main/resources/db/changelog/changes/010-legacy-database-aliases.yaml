@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: chg024-legacy-database-aliases
+      author: calendar
+      changes:
+        - sqlFile:
+            path: ../data/legacy-database-aliases.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            encoding: UTF-8

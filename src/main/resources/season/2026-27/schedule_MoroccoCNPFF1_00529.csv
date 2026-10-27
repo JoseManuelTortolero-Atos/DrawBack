@@ -1,0 +1,134 @@
+sep=,
+Round,Home,Away,Home Name, Away Name
+1,SCC,HANFF,Sporting Club Casablanca,Hilal Athletic Nador Women's Football Club
+1,ASFAR,PFAM,Royal Armed Forces Sports Association,Phoenix Football Academy Marrakech
+1,WAC,RSB,Wydad Athletic Club,Berkane Sports Renaissance
+1,ARAFF,UTS,Raja Ait Iazza Association,Union Touarga Sport
+1,USSB,FUS,Sidi Slimane Union of Berkane,Fath Union Sport
+1,AMLFF,HST,Laayoune Municipal Women's Football Association,Hilal Sporting Club Temara
+2,PFAM,ARAFF,Phoenix Football Academy Marrakech,Raja Ait Iazza Association
+2,ASFAR,WAC,Royal Armed Forces Sports Association,Wydad Athletic Club
+2,HST,HANFF,Hilal Sporting Club Temara,Hilal Athletic Nador Women's Football Club
+2,FUS,SCC,Fath Union Sport,Sporting Club Casablanca
+2,UTS,AMLFF,Union Touarga Sport,Laayoune Municipal Women's Football Association
+2,RSB,USSB,Berkane Sports Renaissance,Sidi Slimane Union of Berkane
+3,SCC,HST,Sporting Club Casablanca,Hilal Sporting Club Temara
+3,HANFF,UTS,Hilal Athletic Nador Women's Football Club,Union Touarga Sport
+3,WAC,PFAM,Wydad Athletic Club,Phoenix Football Academy Marrakech
+3,ARAFF,FUS,Raja Ait Iazza Association,Fath Union Sport
+3,USSB,ASFAR,Sidi Slimane Union of Berkane,Royal Armed Forces Sports Association
+3,AMLFF,RSB,Laayoune Municipal Women's Football Association,Berkane Sports Renaissance
+4,PFAM,SCC,Phoenix Football Academy Marrakech,Sporting Club Casablanca
+4,ASFAR,AMLFF,Royal Armed Forces Sports Association,Laayoune Municipal Women's Football Association
+4,WAC,ARAFF,Wydad Athletic Club,Raja Ait Iazza Association
+4,FUS,HST,Fath Union Sport,Hilal Sporting Club Temara
+4,UTS,USSB,Union Touarga Sport,Sidi Slimane Union of Berkane
+4,RSB,HANFF,Berkane Sports Renaissance,Hilal Athletic Nador Women's Football Club
+5,SCC,RSB,Sporting Club Casablanca,Berkane Sports Renaissance
+5,HANFF,FUS,Hilal Athletic Nador Women's Football Club,Fath Union Sport
+5,HST,UTS,Hilal Sporting Club Temara,Union Touarga Sport
+5,ARAFF,ASFAR,Raja Ait Iazza Association,Royal Armed Forces Sports Association
+5,USSB,WAC,Sidi Slimane Union of Berkane,Wydad Athletic Club
+5,AMLFF,PFAM,Laayoune Municipal Women's Football Association,Phoenix Football Academy Marrakech
+6,PFAM,HANFF,Phoenix Football Academy Marrakech,Hilal Athletic Nador Women's Football Club
+6,ASFAR,HST,Royal Armed Forces Sports Association,Hilal Sporting Club Temara
+6,WAC,AMLFF,Wydad Athletic Club,Laayoune Municipal Women's Football Association
+6,ARAFF,USSB,Raja Ait Iazza Association,Sidi Slimane Union of Berkane
+6,UTS,SCC,Union Touarga Sport,Sporting Club Casablanca
+6,RSB,FUS,Berkane Sports Renaissance,Fath Union Sport
+7,SCC,WAC,Sporting Club Casablanca,Wydad Athletic Club
+7,HANFF,ASFAR,Hilal Athletic Nador Women's Football Club,Royal Armed Forces Sports Association
+7,HST,RSB,Hilal Sporting Club Temara,Berkane Sports Renaissance
+7,FUS,UTS,Fath Union Sport,Union Touarga Sport
+7,USSB,PFAM,Sidi Slimane Union of Berkane,Phoenix Football Academy Marrakech
+7,AMLFF,ARAFF,Laayoune Municipal Women's Football Association,Raja Ait Iazza Association
+8,PFAM,HST,Phoenix Football Academy Marrakech,Hilal Sporting Club Temara
+8,ASFAR,FUS,Royal Armed Forces Sports Association,Fath Union Sport
+8,WAC,HANFF,Wydad Athletic Club,Hilal Athletic Nador Women's Football Club
+8,ARAFF,SCC,Raja Ait Iazza Association,Sporting Club Casablanca
+8,USSB,AMLFF,Sidi Slimane Union of Berkane,Laayoune Municipal Women's Football Association
+8,RSB,UTS,Berkane Sports Renaissance,Union Touarga Sport
+9,SCC,USSB,Sporting Club Casablanca,Sidi Slimane Union of Berkane
+9,HANFF,AMLFF,Hilal Athletic Nador Women's Football Club,Laayoune Municipal Women's Football Association
+9,HST,ARAFF,Hilal Sporting Club Temara,Raja Ait Iazza Association
+9,FUS,WAC,Fath Union Sport,Wydad Athletic Club
+9,UTS,ASFAR,Union Touarga Sport,Royal Armed Forces Sports Association
+9,RSB,PFAM,Berkane Sports Renaissance,Phoenix Football Academy Marrakech
+10,PFAM,UTS,Phoenix Football Academy Marrakech,Union Touarga Sport
+10,ASFAR,SCC,Royal Armed Forces Sports Association,Sporting Club Casablanca
+10,WAC,HST,Wydad Athletic Club,Hilal Sporting Club Temara
+10,ARAFF,RSB,Raja Ait Iazza Association,Berkane Sports Renaissance
+10,USSB,HANFF,Sidi Slimane Union of Berkane,Hilal Athletic Nador Women's Football Club
+10,AMLFF,FUS,Laayoune Municipal Women's Football Association,Fath Union Sport
+11,SCC,AMLFF,Sporting Club Casablanca,Laayoune Municipal Women's Football Association
+11,HANFF,ARAFF,Hilal Athletic Nador Women's Football Club,Raja Ait Iazza Association
+11,HST,USSB,Hilal Sporting Club Temara,Sidi Slimane Union of Berkane
+11,FUS,PFAM,Fath Union Sport,Phoenix Football Academy Marrakech
+11,UTS,WAC,Union Touarga Sport,Wydad Athletic Club
+11,RSB,ASFAR,Berkane Sports Renaissance,Royal Armed Forces Sports Association
+12,HANFF,SCC,Hilal Athletic Nador Women's Football Club,Sporting Club Casablanca
+12,PFAM,ASFAR,Phoenix Football Academy Marrakech,Royal Armed Forces Sports Association
+12,RSB,WAC,Berkane Sports Renaissance,Wydad Athletic Club
+12,UTS,ARAFF,Union Touarga Sport,Raja Ait Iazza Association
+12,FUS,USSB,Fath Union Sport,Sidi Slimane Union of Berkane
+12,HST,AMLFF,Hilal Sporting Club Temara,Laayoune Municipal Women's Football Association
+13,ARAFF,PFAM,Raja Ait Iazza Association,Phoenix Football Academy Marrakech
+13,WAC,ASFAR,Wydad Athletic Club,Royal Armed Forces Sports Association
+13,HANFF,HST,Hilal Athletic Nador Women's Football Club,Hilal Sporting Club Temara
+13,SCC,FUS,Sporting Club Casablanca,Fath Union Sport
+13,AMLFF,UTS,Laayoune Municipal Women's Football Association,Union Touarga Sport
+13,USSB,RSB,Sidi Slimane Union of Berkane,Berkane Sports Renaissance
+14,HST,SCC,Hilal Sporting Club Temara,Sporting Club Casablanca
+14,UTS,HANFF,Union Touarga Sport,Hilal Athletic Nador Women's Football Club
+14,PFAM,WAC,Phoenix Football Academy Marrakech,Wydad Athletic Club
+14,FUS,ARAFF,Fath Union Sport,Raja Ait Iazza Association
+14,ASFAR,USSB,Royal Armed Forces Sports Association,Sidi Slimane Union of Berkane
+14,RSB,AMLFF,Berkane Sports Renaissance,Laayoune Municipal Women's Football Association
+15,SCC,PFAM,Sporting Club Casablanca,Phoenix Football Academy Marrakech
+15,AMLFF,ASFAR,Laayoune Municipal Women's Football Association,Royal Armed Forces Sports Association
+15,ARAFF,WAC,Raja Ait Iazza Association,Wydad Athletic Club
+15,HST,FUS,Hilal Sporting Club Temara,Fath Union Sport
+15,USSB,UTS,Sidi Slimane Union of Berkane,Union Touarga Sport
+15,HANFF,RSB,Hilal Athletic Nador Women's Football Club,Berkane Sports Renaissance
+16,RSB,SCC,Berkane Sports Renaissance,Sporting Club Casablanca
+16,FUS,HANFF,Fath Union Sport,Hilal Athletic Nador Women's Football Club
+16,UTS,HST,Union Touarga Sport,Hilal Sporting Club Temara
+16,ASFAR,ARAFF,Royal Armed Forces Sports Association,Raja Ait Iazza Association
+16,WAC,USSB,Wydad Athletic Club,Sidi Slimane Union of Berkane
+16,PFAM,AMLFF,Phoenix Football Academy Marrakech,Laayoune Municipal Women's Football Association
+17,HANFF,PFAM,Hilal Athletic Nador Women's Football Club,Phoenix Football Academy Marrakech
+17,HST,ASFAR,Hilal Sporting Club Temara,Royal Armed Forces Sports Association
+17,AMLFF,WAC,Laayoune Municipal Women's Football Association,Wydad Athletic Club
+17,USSB,ARAFF,Sidi Slimane Union of Berkane,Raja Ait Iazza Association
+17,SCC,UTS,Sporting Club Casablanca,Union Touarga Sport
+17,FUS,RSB,Fath Union Sport,Berkane Sports Renaissance
+18,WAC,SCC,Wydad Athletic Club,Sporting Club Casablanca
+18,ASFAR,HANFF,Royal Armed Forces Sports Association,Hilal Athletic Nador Women's Football Club
+18,RSB,HST,Berkane Sports Renaissance,Hilal Sporting Club Temara
+18,UTS,FUS,Union Touarga Sport,Fath Union Sport
+18,PFAM,USSB,Phoenix Football Academy Marrakech,Sidi Slimane Union of Berkane
+18,ARAFF,AMLFF,Raja Ait Iazza Association,Laayoune Municipal Women's Football Association
+19,HST,PFAM,Hilal Sporting Club Temara,Phoenix Football Academy Marrakech
+19,FUS,ASFAR,Fath Union Sport,Royal Armed Forces Sports Association
+19,HANFF,WAC,Hilal Athletic Nador Women's Football Club,Wydad Athletic Club
+19,SCC,ARAFF,Sporting Club Casablanca,Raja Ait Iazza Association
+19,AMLFF,USSB,Laayoune Municipal Women's Football Association,Sidi Slimane Union of Berkane
+19,UTS,RSB,Union Touarga Sport,Berkane Sports Renaissance
+20,USSB,SCC,Sidi Slimane Union of Berkane,Sporting Club Casablanca
+20,AMLFF,HANFF,Laayoune Municipal Women's Football Association,Hilal Athletic Nador Women's Football Club
+20,ARAFF,HST,Raja Ait Iazza Association,Hilal Sporting Club Temara
+20,WAC,FUS,Wydad Athletic Club,Fath Union Sport
+20,ASFAR,UTS,Royal Armed Forces Sports Association,Union Touarga Sport
+20,PFAM,RSB,Phoenix Football Academy Marrakech,Berkane Sports Renaissance
+21,UTS,PFAM,Union Touarga Sport,Phoenix Football Academy Marrakech
+21,SCC,ASFAR,Sporting Club Casablanca,Royal Armed Forces Sports Association
+21,HST,WAC,Hilal Sporting Club Temara,Wydad Athletic Club
+21,RSB,ARAFF,Berkane Sports Renaissance,Raja Ait Iazza Association
+21,HANFF,USSB,Hilal Athletic Nador Women's Football Club,Sidi Slimane Union of Berkane
+21,FUS,AMLFF,Fath Union Sport,Laayoune Municipal Women's Football Association
+22,AMLFF,SCC,Laayoune Municipal Women's Football Association,Sporting Club Casablanca
+22,ARAFF,HANFF,Raja Ait Iazza Association,Hilal Athletic Nador Women's Football Club
+22,USSB,HST,Sidi Slimane Union of Berkane,Hilal Sporting Club Temara
+22,PFAM,FUS,Phoenix Football Academy Marrakech,Fath Union Sport
+22,WAC,UTS,Wydad Athletic Club,Union Touarga Sport
+22,ASFAR,RSB,Royal Armed Forces Sports Association,Berkane Sports Renaissance
